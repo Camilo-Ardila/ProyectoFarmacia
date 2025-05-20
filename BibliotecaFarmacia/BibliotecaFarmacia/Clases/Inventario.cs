@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BibliotecaFarmacia.Clases
 {
-    class Inventario
+    public abstract class Inventario
     {
+        public static List<Medicamento> l_inventario = new List<Medicamento>();
+
     }
 }

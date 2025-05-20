@@ -2,7 +2,7 @@
 
 namespace BibliotecaFarmacia.Clases
 {
-    internal class Medicamento
+    public class Medicamento
     {
         internal string nom_medicamento = "";
         internal string laboratorio = "";
