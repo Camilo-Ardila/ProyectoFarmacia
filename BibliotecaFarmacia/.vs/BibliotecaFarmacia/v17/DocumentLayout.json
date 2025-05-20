@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "BibliotecaFarmacia\\Clases\\M_liquido.cs",
               "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
               "RelativeToolTip": "BibliotecaFarmacia\\Clases\\M_liquido.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T02:33:56.671Z",
               "EditorCaption": ""
@@ -75,8 +75,7 @@
               "RelativeToolTip": "BibliotecaFarmacia\\Clases\\M_capsula.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwB8AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T02:32:16.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T02:32:16.9Z"
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "RelativeToolTip": "BibliotecaFarmacia\\Clases\\M_pasta.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T02:09:56.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T02:09:56.985Z"
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "BibliotecaFarmacia\\Clases\\Movimiento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T02:03:42.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T02:03:42.144Z"
             },
             {
               "$type": "Document",
@@ -114,8 +111,7 @@
               "RelativeToolTip": "BibliotecaFarmacia\\Clases\\ValidacionesGenerales.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T00:59:56.526Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T00:59:56.526Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "BibliotecaFarmacia\\Clases\\Persona.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T00:00:30.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T00:00:30.838Z"
             },
             {
               "$type": "Document",
@@ -140,8 +135,7 @@
               "RelativeToolTip": "BibliotecaFarmacia\\Clases\\Laboratorio.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T00:00:17.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T00:00:17.005Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "RelativeToolTip": "BibliotecaFarmacia\\Clases\\Medicamento.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAQwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T23:59:57.176Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T23:59:57.176Z"
             },
             {
               "$type": "Document",
@@ -166,8 +159,7 @@
               "RelativeToolTip": "BibliotecaFarmacia\\Clases\\Inventario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T23:59:42.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T23:59:42.702Z"
             },
             {
               "$type": "Document",
@@ -179,8 +171,7 @@
               "RelativeToolTip": "BibliotecaFarmacia\\Clases\\Farmacia.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T23:59:30.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-11T23:59:30.697Z"
             }
           ]
         }
