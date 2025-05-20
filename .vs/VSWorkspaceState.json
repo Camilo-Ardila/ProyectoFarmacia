@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
-    "",
     "\\BibliotecaFarmacia",
     "\\BibliotecaFarmacia\\BibliotecaFarmacia",
-    "\\BibliotecaFarmacia\\BibliotecaFarmacia\\bin",
-    "\\BibliotecaFarmacia\\BibliotecaFarmacia\\Clases"
+    "\\BibliotecaFarmacia\\BibliotecaFarmacia\\Clases",
+    "\\BibliotecaFarmacia\\BibliotecaFarmacia\\Eventos",
+    "\\BibliotecaFarmacia\\BibliotecaFarmacia\\Interfaces"
   ],
-  "SelectedNode": "\\BibliotecaFarmacia\\BibliotecaFarmacia\\Clases\\Cliente.cs",
   "PreviewInSolutionExplorer": false
 }

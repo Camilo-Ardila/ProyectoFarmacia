@@ -1,8 +1,9 @@
 ﻿using System;
+using BibliotecaFarmacia.Interfaces; // Asegúrate de importar la interfaz
 
 namespace BibliotecaFarmacia.Clases
 {
-    public class Persona
+    public class Persona : IAplicarDescuento
     {
         private string nombre_persona = "";
         private string cc = "";
@@ -57,6 +58,18 @@ namespace BibliotecaFarmacia.Clases
             Nombre_persona = nombre_persona;
             CC = cc;
             Telefono_persona = telefono_persona;
+        }
+
+        // Método de la interfaz
+        public virtual double AplicarDescuento()
+        {
+            return 0.0; // Por defecto no hay descuento
+        }
+
+        // Propiedad con el total aplicado con descuento
+        public virtual double TotalConDescuento(uint total_gastado)
+        {
+            return total_gastado - (total_gastado * AplicarDescuento());
         }
     }
 }
