@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BibliotecaFarmacia.Interfaces;
+using BibliotecaFarmacia.Clases;
 
 namespace BibliotecaFarmacia.Clases
 {
@@ -25,7 +26,7 @@ namespace BibliotecaFarmacia.Clases
             foreach (var med in l_disponibles)
             {
                 // Convertimos el precio_compra (float o decimal) a ulong
-                total += (ulong)(med.PrecioCompra * cantidad_medicamentos);
+                total += (ulong)(med.precio_compra * cantidad_medicamentos);
             }
 
             return total;

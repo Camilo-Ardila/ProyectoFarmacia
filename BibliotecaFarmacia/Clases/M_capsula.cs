@@ -8,6 +8,14 @@ namespace BibliotecaFarmacia.Clases
         public ushort miligramos;
         public string relleno;
 
+        public M_capsula(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento,
+                         uint precio_compra, ushort cantidad, ushort miligramos, string relleno, string tipo_med = "capsulas")
+            : base(nom_medicamento, laboratorio, fecha_vencimiento, precio_compra, cantidad, tipo_med)
+        {
+            Miligramos = miligramos;
+            Relleno = relleno;
+        }
+
         public ushort Miligramos
         {
             get => miligramos;
@@ -28,12 +36,6 @@ namespace BibliotecaFarmacia.Clases
             }
         }
 
-        public M_capsula(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento,
-                         uint precio_compra, ushort cantidad, ushort miligramos, string relleno)
-            : base(nom_medicamento, laboratorio, fecha_vencimiento, precio_compra, cantidad)
-        {
-            Miligramos = miligramos;
-            Relleno = relleno;
-        }
+        
     }
 }

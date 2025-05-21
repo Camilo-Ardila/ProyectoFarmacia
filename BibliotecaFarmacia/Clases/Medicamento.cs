@@ -9,8 +9,19 @@ namespace BibliotecaFarmacia.Clases
         public DateTime fecha_vencimiento;
         public uint precio_compra;
         public ushort cantidad;
+        private string tipo_med;
         public const ushort cant_min = 1;
         public const ushort cant_max = 1000;
+
+        public Medicamento(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento, uint precio_compra, ushort cantidad, string tipo_med)
+        {
+            Nom_medicamento = nom_medicamento;
+            Laboratorio = laboratorio;
+            Fecha_vencimiento = fecha_vencimiento;
+            Precio_compra = precio_compra;
+            Cantidad = cantidad;
+            Tipo_med = tipo_med;
+        }
 
         public string Nom_medicamento
         {
@@ -58,14 +69,6 @@ namespace BibliotecaFarmacia.Clases
                 ? throw new ArgumentOutOfRangeException(nameof(Cantidad), $"Debe estar entre {cant_min} y {cant_max}.")
                 : value;
         }
-
-        public Medicamento(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento, uint precio_compra, ushort cantidad)
-        {
-            Nom_medicamento = nom_medicamento;
-            Laboratorio = laboratorio;
-            Fecha_vencimiento = fecha_vencimiento;
-            Precio_compra = precio_compra;
-            Cantidad = cantidad;
-        }
+        public string Tipo_med { get => tipo_med; set => tipo_med = value; }
     }
 }

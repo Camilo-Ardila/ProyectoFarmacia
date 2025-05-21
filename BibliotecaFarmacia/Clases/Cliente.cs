@@ -1,31 +1,19 @@
 ﻿using System;
 using BibliotecaFarmacia.Eventos;
+using BibliotecaFarmacia.Clases;
 
 namespace BibliotecaFarmacia.Clases
 {
     public class Cliente : Persona
     {
-        private uint total_gastado;
-        private string ptos;
-        const int div = 100000, int eq = 1000 ;
+        public uint total_gastado;
+        public uint ptos;
+        const int div = 100000;
+        const int eq = 1000;
 
-        // Evento: instancia del publicador
-        private Publisher_P_Acumulados notificacion_puntos;
-
-        public uint Total_gastado
-        {
-            get => total_gastado;
-            set => total_gastado = value;
-        }
-
-        public string Ptos
-        {
-            get => ptos;
-            set => ptos = value ?? "0";
-        }
-
-        public Cliente(string nombre_persona, string cc, string telefono_persona, uint total_gastado, string ptos)
-            : base(nombre_persona, cc, telefono_persona)
+        public Publisher_P_Acumulados notificacion_puntos;
+        public Cliente(string nombre_persona, string cc, string telefono_persona, uint total_gastado=0, uint ptos=0, string tipo = "cliente")
+            : base(nombre_persona, cc, telefono_persona,total_gastado, tipo)
         {
             Total_gastado = total_gastado;
             Ptos = ptos;
@@ -35,28 +23,58 @@ namespace BibliotecaFarmacia.Clases
             notificacion_puntos.evento_ptos += EventHandler;
         }
 
+        // Evento: instancia del publicador
+        
+
+        public uint Total_gastado
+        {
+            get => total_gastado;
+            set => total_gastado = value;
+        }
+
+        public uint Ptos
+        {
+            get => ptos;
+            set => ptos = value;
+        }
+
+        
+
         // Manejador del evento
-        public void EventHandler(string nuevosPuntos)
+        public void EventHandler(uint nuevosPuntos)
         {
             Console.WriteLine($"Cliente recibió puntos: {nuevosPuntos}");
             Ptos = nuevosPuntos;
         }
 
         // Simulación de compra para generar puntos
-        public void SimularCompra(uint montoCompra)
+        public void calcularptos(string cc, uint val_movimiento)
         {
-            Total_gastado += montoCompra;
+            
 
-            // Regla: cada 100000 gastados equivale a 1000 puntos
-            uint puntosCalculados = (Total_gastado / div) * eq;
+            // Buscar a la persona con la cédula dada
+            var persona = Farmacia.l_personas.Find(p => p.CC == cc);
 
-            // Disparar evento con nuevos puntos
-            notificacion_puntos.Informar_P_Acumulados(puntosCalculados.ToString());
+            // Verificar si existe y es un Cliente
+            if (persona is Cliente cliente)
+            {
+                // Sumar el valor del movimiento al total gastado
+                cliente.Total_gastado += val_movimiento;
 
-            public override double AplicarDescuento()
-        {
-            return 0.08;
+                // Calcular puntos
+                uint puntosCalculados = (cliente.Total_gastado / div) * eq;
+
+                // Disparar el evento de puntos
+                cliente.notificacion_puntos.Informar_P_Acumulados(puntosCalculados);
+            }
+            else
+            {
+                Console.WriteLine("No se encontró un cliente con esa cédula o no es un cliente.");
+            }
         }
-    }
+
+
+        // Método override para aplicar descuento
+        
     }
 }

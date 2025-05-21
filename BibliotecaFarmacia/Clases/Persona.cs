@@ -3,13 +3,23 @@ using BibliotecaFarmacia.Interfaces; // Asegúrate de importar la interfaz
 
 namespace BibliotecaFarmacia.Clases
 {
-    public class Persona : IAplicarDescuento
+    public class Persona
     {
-        private string nombre_persona = "";
-        private string cc = "";
-        private string telefono_persona = "";
-        private ValidacionesGenerales validaciones = new ValidacionesGenerales();
-        private byte min_long = 7, max_long = 10;
+        public string tipo = "";
+        public string nombre_persona = "";
+        public string cc = "";
+        public string telefono_persona = "";
+        public ValidacionesGenerales validaciones = new ValidacionesGenerales();
+        public byte min_long = 7, max_long = 10;
+        private uint total_gastado = 0;
+
+        public Persona(string nombre_persona, string cc, string telefono_persona,uint total_gastado,  string tipo)
+        {
+            Nombre_persona = nombre_persona;
+            CC = cc;
+            Telefono_persona = telefono_persona;
+            Total_gastado = total_gastado;
+        }
 
         public string Nombre_persona
         {
@@ -53,23 +63,7 @@ namespace BibliotecaFarmacia.Clases
             }
         }
 
-        public Persona(string nombre_persona, string cc, string telefono_persona)
-        {
-            Nombre_persona = nombre_persona;
-            CC = cc;
-            Telefono_persona = telefono_persona;
-        }
+        public uint Total_gastado { get => total_gastado; set => total_gastado = value; }
 
-        // Método de la interfaz
-        public virtual double AplicarDescuento()
-        {
-            return 0.0; // Por defecto no hay descuento
-        }
-
-        // Propiedad con el total aplicado con descuento
-        public virtual double TotalConDescuento(uint total_gastado)
-        {
-            return total_gastado - (total_gastado * AplicarDescuento());
-        }
     }
 }

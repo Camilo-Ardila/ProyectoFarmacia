@@ -7,27 +7,24 @@ using BibliotecaFarmacia.Interfaces;
 
 namespace BibliotecaFarmacia.Clases
 {
-    public class M_venta : Movimiento
+    public class Movimiento : ICalcularValor
     {
-        public List<Medicamento> l_inventario = new List<Medicamento>();
+        public ulong valor_movimiento;
+        public uint cantidad_medicamentos;
 
-        public M_venta(ulong valor_movimiento, uint cantidad_medicamentos)
-            : base(valor_movimiento, cantidad_medicamentos)
+        public Movimiento(ulong valor_movimiento, uint cantidad_medicamentos)
         {
             this.valor_movimiento = valor_movimiento;
             this.cantidad_medicamentos = cantidad_medicamentos;
         }
 
-        public override ulong Valor_Total()
+        public ulong Valor_movimiento { get => valor_movimiento; set => valor_movimiento = value; }
+        public uint Cantidad_medicamentos { get => cantidad_medicamentos; set => cantidad_medicamentos = value; }
+
+        // Método de la interfaz
+        public virtual ulong Valor_Total()
         {
-            ulong total = 0;
-
-            foreach (var med in l_inventario)
-            {
-                total += (ulong)(med.PrecioVenta * cantidad_medicamentos);
-            }
-
-            return total;
+            return valor_movimiento * cantidad_medicamentos;
         }
     }
 }

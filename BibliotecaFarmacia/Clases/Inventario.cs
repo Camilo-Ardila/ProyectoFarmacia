@@ -10,9 +10,10 @@ namespace BibliotecaFarmacia.Clases
         public Publisher_Reorden notificacion_reorden = new Publisher_Reorden();
         public Publisher_Vencimiento notificacion_vencimiento = new Publisher_Vencimiento();
 
-        public Inventario()
+        // Constructor protegido
+        protected Inventario()
         {
-            // Suscripciones a eventos
+            // Suscripciones a eventos dentro del constructor
             notificacion_reorden.evento_existencias += EventHandler;
             notificacion_vencimiento.evento_fecha += EventHandler;
         }
@@ -42,5 +43,3 @@ namespace BibliotecaFarmacia.Clases
         }
     }
 }
-
-

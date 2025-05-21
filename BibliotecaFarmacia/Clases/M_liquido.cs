@@ -7,6 +7,14 @@ namespace BibliotecaFarmacia.Clases
         public ushort mililitros;
         public string envase;
 
+        public M_liquido(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento,
+                         uint precio_compra, ushort cantidad, ushort mililitros, string envase, string tipo_med = "liquido")
+            : base(nom_medicamento, laboratorio, fecha_vencimiento, precio_compra, cantidad, tipo_med)
+        {
+            Mililitros = mililitros;
+            Envase = envase;
+        }
+
         public ushort Mililitros
         {
             get => mililitros;
@@ -27,12 +35,6 @@ namespace BibliotecaFarmacia.Clases
             }
         }
 
-        public M_liquido(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento,
-                         uint precio_compra, ushort cantidad, ushort mililitros, string envase)
-            : base(nom_medicamento, laboratorio, fecha_vencimiento, precio_compra, cantidad)
-        {
-            Mililitros = mililitros;
-            Envase = envase;
-        }
+        
     }
 }

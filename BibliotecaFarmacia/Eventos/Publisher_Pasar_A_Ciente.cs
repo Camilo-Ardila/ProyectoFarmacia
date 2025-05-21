@@ -8,7 +8,7 @@ namespace BibliotecaFarmacia.Eventos
 
     public class Publisher_Pasar_A_Cliente
     {
-        const int valor_pasar = 1000000
+        const int valor_pasar = 1000000;
         // Declarar el evento
         public event MontoMinEventHandler evento_monto;
 

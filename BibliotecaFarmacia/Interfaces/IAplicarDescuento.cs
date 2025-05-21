@@ -1,8 +1,10 @@
-﻿namespace BibliotecaFarmacia.Interfaces
+﻿using BibliotecaFarmacia.Clases;
+
+namespace BibliotecaFarmacia.Interfaces
 {
     public interface IAplicarDescuento
     {
-        
-        double AplicarDescuento();
+
+        public void AplicarDescuento(Medicamento medicamento, string tipo);
     }
 }

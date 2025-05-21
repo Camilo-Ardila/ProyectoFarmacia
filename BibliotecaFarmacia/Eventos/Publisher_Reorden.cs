@@ -1,4 +1,5 @@
 ﻿using System;
+using BibliotecaFarmacia.Clases;
 
 namespace BibliotecaFarmacia.Eventos
 {
