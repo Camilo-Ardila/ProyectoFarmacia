@@ -15,9 +15,8 @@ namespace BibliotecaFarmacia.Clases
         public static List<Laboratorio> l_laboratorios = new List<Laboratorio>();
         public static List<Persona> l_personas = new List<Persona>();
 
-        // Constructor
-        
+        public static List<Medicamento> l_disponibles = new List<Medicamento>();
 
-        // Aquí puedes agregar métodos públicos para interactuar con los datos si es necesario
+     
     }
 }
