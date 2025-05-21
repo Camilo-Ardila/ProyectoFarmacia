@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BibliotecaFarmacia.Clases
+namespace BibliotecaFarmacia.Eventos
 {
     public delegate void DelegadoExistencias(Medicamento medicamento);
 

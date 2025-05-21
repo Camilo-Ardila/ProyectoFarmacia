@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BibliotecaFarmacia.Clases
+namespace BibliotecaFarmacia.Eventos
 {
     public delegate void delegado_ptos_compra(string ptos);
 

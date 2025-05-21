@@ -1,6 +1,7 @@
 ﻿using System;
 
-namespace BibliotecaFarmacia.Clases
+namespace BibliotecaFarmacia.Eventos
+
 {
     public delegate void MontoMinEventHandler(uint total_gastado);
    

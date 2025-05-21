@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using BibliotecaFarmacia.Eventos;
 
 namespace BibliotecaFarmacia.Clases
 {
     public abstract class Inventario
     {
         public static List<Medicamento> l_inventario = new List<Medicamento>();
-        protected Publisher_Reorden notificacion_reorden = new Publisher_Reorden();
-        protected Publisher_Vencimiento notificacion_vencimiento = new Publisher_Vencimiento();
+        public Publisher_Reorden notificacion_reorden = new Publisher_Reorden();
+        public Publisher_Vencimiento notificacion_vencimiento = new Publisher_Vencimiento();
 
         public Inventario()
         {

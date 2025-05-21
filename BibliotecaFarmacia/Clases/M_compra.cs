@@ -7,11 +7,11 @@ using BibliotecaFarmacia.Interfaces;
 
 namespace BibliotecaFarmacia.Clases
 {
-    public class M_venta : Movimiento
+    public class M_compra : Movimiento
     {
-        public List<Medicamento> l_inventario = new List<Medicamento>();
+        public List<Medicamento> l_disponibles = new List<Medicamento>();
 
-        public M_venta(ulong valor_movimiento, uint cantidad_medicamentos)
+        public M_compra(ulong valor_movimiento, uint cantidad_medicamentos)
             : base(valor_movimiento, cantidad_medicamentos)
         {
             this.valor_movimiento = valor_movimiento;
@@ -22,9 +22,10 @@ namespace BibliotecaFarmacia.Clases
         {
             ulong total = 0;
 
-            foreach (var med in l_inventario)
+            foreach (var med in l_disponibles)
             {
-                total += (ulong)(med.PrecioVenta * cantidad_medicamentos);
+                // Convertimos el precio_compra (float o decimal) a ulong
+                total += (ulong)(med.PrecioCompra * cantidad_medicamentos);
             }
 
             return total;
