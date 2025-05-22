@@ -4,7 +4,7 @@ namespace MVC.Services
 {
     public class M_CompraService
     {
-        
+
         public List<Medicamento> MostrarDisponibles()
         {
             List<Medicamento> l_disponibles = Farmacia.l_disponibles;
@@ -32,41 +32,26 @@ namespace MVC.Services
             return medsEncontrados;
         }
 
-        public bool Eliminar(string nom_medicamento, int cantidadAEliminar)
+        public void EliminarOpción(string nombre)
         {
-            var ahora = DateTime.Now;
+            Medicamento medicamento = Farmacia.l_disponibles.FirstOrDefault(p => p.Nom_medicamento == nombre);
 
-            // Filtrar medicamentos por nombre, ordenados por vencimiento
-            var medicamentos = Inventario.l_inventario
-                .Where(p => p.nom_medicamento.ToLower() == nom_medicamento.ToLower())
-                .OrderBy(p => p.fecha_vencimiento)
-                .ToList();
-
-            int cantidadEliminada = 0;
-
-            foreach (var med in medicamentos)
-            {
-                if (cantidadEliminada >= cantidadAEliminar)
-                    break;
-
-                int unidadesRestantes = cantidadAEliminar - cantidadEliminada;
-
-                if (med.Cantidad <= unidadesRestantes)
-                {
-                    // Eliminar completamente este objeto
-                    cantidadEliminada += med.Cantidad;
-                    Inventario.l_inventario.Remove(med);
-                }
-                else
-                {
-                    // Solo restar la cantidad necesaria y dejar el objeto
-                    med.Cantidad -= (ushort) unidadesRestantes;
-                    cantidadEliminada += unidadesRestantes;
-                }
-            }
-
-            return cantidadEliminada == cantidadAEliminar;
+            Farmacia.l_disponibles.Remove(medicamento);
         }
 
+        public void AgregarOpción(Medicamento medicamento)
+        {
+            Farmacia.l_disponibles.Add(medicamento);
+        }
+
+        public void ComprarMedicamento(Medicamento medicamento, M_compra movimiento)
+        {
+            for (int i = 1; i <= movimiento.Cantidad_medicamentos; i++)
+            {
+                Inventario.l_inventario.Add(medicamento);
+            }
+
+            Farmacia.l_compras.Add(movimiento);
+        }
     }
 }

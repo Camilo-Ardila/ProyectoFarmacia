@@ -9,8 +9,8 @@ namespace BibliotecaFarmacia.Clases
         public string relleno;
 
         public M_capsula(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento,
-                         uint precio_compra, ushort cantidad, ushort miligramos, string relleno, string tipo_med = "capsulas")
-            : base(nom_medicamento, laboratorio, fecha_vencimiento, precio_compra, cantidad, tipo_med)
+                         uint precio_compra, ushort cantidad, ushort miligramos, string relleno, string tipo_med = "capsulas", uint precio_venta = 0)
+            : base(nom_medicamento, laboratorio, fecha_vencimiento, precio_compra, cantidad, tipo_med, precio_venta)
         {
             Miligramos = miligramos;
             Relleno = relleno;

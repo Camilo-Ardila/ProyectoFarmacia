@@ -11,11 +11,10 @@ namespace BibliotecaFarmacia.Clases
     public class M_compra : Movimiento
     {
         
-        public M_compra(ulong valor_movimiento, uint cantidad_medicamentos)
-            : base(valor_movimiento, cantidad_medicamentos)
+        public M_compra(Medicamento medicamento, ulong valor_movimiento, uint cantidad_medicamentos)
+            : base(medicamento, valor_movimiento, cantidad_medicamentos)
         {
-            this.valor_movimiento = valor_movimiento;
-            this.cantidad_medicamentos = cantidad_medicamentos;
+           
         }
 
         public override ulong Valor_Total()

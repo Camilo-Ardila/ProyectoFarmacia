@@ -6,8 +6,8 @@ namespace BibliotecaFarmacia.Clases
     {
         public ushort miligramos;
 
-        public M_pasta(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento, uint precio_compra, ushort cantidad, ushort miligramos, string tipo_med = "pasta")
-        : base(nom_medicamento, laboratorio, fecha_vencimiento, precio_compra, cantidad, tipo_med)
+        public M_pasta(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento, uint precio_compra, ushort cantidad, ushort miligramos, string tipo_med = "pasta", uint precio_venta = 0)
+        : base(nom_medicamento, laboratorio, fecha_vencimiento, precio_compra, cantidad, tipo_med, precio_venta)
         {
             Miligramos = miligramos;
         }

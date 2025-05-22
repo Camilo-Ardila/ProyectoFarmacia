@@ -8,12 +8,13 @@ namespace BibliotecaFarmacia.Clases
         public string laboratorio = "";
         public DateTime fecha_vencimiento;
         public uint precio_compra;
+        private uint precio_venta;
         public ushort cantidad;
         private string tipo_med;
         public const ushort cant_min = 1;
         public const ushort cant_max = 1000;
 
-        public Medicamento(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento, uint precio_compra, ushort cantidad, string tipo_med)
+        public Medicamento(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento, uint precio_compra, ushort cantidad, string tipo_med, uint precio_venta = 0)
         {
             Nom_medicamento = nom_medicamento;
             Laboratorio = laboratorio;
@@ -60,7 +61,7 @@ namespace BibliotecaFarmacia.Clases
                 : value;
         }
 
-        public uint Precio_venta => (uint)(precio_compra * 1.2);
+       
 
         public ushort Cantidad
         {
@@ -70,5 +71,6 @@ namespace BibliotecaFarmacia.Clases
                 : value;
         }
         public string Tipo_med { get => tipo_med; set => tipo_med = value; }
+        public uint Precio_venta { get => precio_venta; set => precio_venta = value; }
     }
 }

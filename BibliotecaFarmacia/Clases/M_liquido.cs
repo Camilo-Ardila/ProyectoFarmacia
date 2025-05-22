@@ -8,8 +8,8 @@ namespace BibliotecaFarmacia.Clases
         public string envase;
 
         public M_liquido(string nom_medicamento, string laboratorio, DateTime fecha_vencimiento,
-                         uint precio_compra, ushort cantidad, ushort mililitros, string envase, string tipo_med = "liquido")
-            : base(nom_medicamento, laboratorio, fecha_vencimiento, precio_compra, cantidad, tipo_med)
+                         uint precio_compra, ushort cantidad, ushort mililitros, string envase, string tipo_med = "liquido", uint precio_venta = 0)
+            : base(nom_medicamento, laboratorio, fecha_vencimiento, precio_compra, cantidad, tipo_med, precio_venta)
         {
             Mililitros = mililitros;
             Envase = envase;
