@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\bin\\Debug",
+    "\\bin\\Release",
+    "\\bin\\Release\\net8.0",
+    "\\Controllers",
+    "\\Models",
+    "\\Properties",
+    "\\Services",
+    "\\wwwroot"
+  ],
+  "SelectedNode": "\\Services\\PersonaService.cs",
+  "PreviewInSolutionExplorer": false
+}

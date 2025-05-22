@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Clases"
   ],
-  "SelectedNode": "\\BibliotecaFarmacia.sln",
+  "SelectedNode": "\\Clases\\Persona.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <Reference Include="BibliotecaFarmacia">
-      <HintPath>..\..\..\BibliotecaFarmacia.dll</HintPath>
+      <HintPath>..\..\BibliotecaFarmacia\bin\Debug\net8.0\BibliotecaFarmacia.dll</HintPath>
     </Reference>
   </ItemGroup>
 
