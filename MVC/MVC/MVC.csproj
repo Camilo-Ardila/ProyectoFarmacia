@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <Reference Include="BibliotecaFarmacia">
-      <HintPath>bin\Debug\net8.0\BibliotecaFarmacia.dll</HintPath>
+      <HintPath>..\..\BibliotecaFarmacia\bin\Debug\net8.0\BibliotecaFarmacia.dll</HintPath>
     </Reference>
   </ItemGroup>
 

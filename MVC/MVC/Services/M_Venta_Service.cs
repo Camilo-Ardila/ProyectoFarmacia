@@ -27,8 +27,15 @@ namespace MVC.Services
             return medicamentosEncontrados;
         }
 
-        public bool Vender_Medicamento(string nom_medicamento, int cantidadSolicitada)
+        public bool Vender_Medicamento(string nom_medicamento, int cantidadSolicitada, string cc)
         {
+            // Buscar a la persona en la lista de personas
+            var persona = Farmacia.l_personas.FirstOrDefault(p => p.cc == cc);
+
+            if (persona == null)
+                return false; // No se encontró la persona
+
+            // Buscar los medicamentos por nombre y ordenarlos por fecha de vencimiento
             var medicamentos = Inventario.l_inventario
                 .Where(p => p.nom_medicamento.ToLower() == nom_medicamento.ToLower())
                 .OrderBy(p => p.fecha_vencimiento)
@@ -36,8 +43,9 @@ namespace MVC.Services
 
             int cantidadVendida = 0;
             ulong valorTotal = 0;
+            Medicamento medicamentoReferencia = null;
 
-            foreach (var med in medicamentos)
+            foreach (var med in medicamentos.ToList()) // .ToList() para evitar modificación de colección durante iteración
             {
                 if (cantidadVendida >= cantidadSolicitada)
                     break;
@@ -47,26 +55,37 @@ namespace MVC.Services
                 if (med.Cantidad <= unidadesRestantes)
                 {
                     cantidadVendida += med.Cantidad;
-                    valorTotal += (ulong)(med.Cantidad * med.precio_unitario);
+                    valorTotal += (ulong)(med.Cantidad * med.Precio_venta);
                     Inventario.l_inventario.Remove(med);
+
+                    if (medicamentoReferencia == null)
+                        medicamentoReferencia = med;
                 }
                 else
                 {
                     med.Cantidad -= (ushort)unidadesRestantes;
                     cantidadVendida += unidadesRestantes;
-                    valorTotal += (ulong)(unidadesRestantes * med.Precio);
+                    valorTotal += (ulong)(unidadesRestantes * med.Precio_venta);
+
+                    if (medicamentoReferencia == null)
+                        medicamentoReferencia = med;
                 }
             }
 
-            if (cantidadVendida > 0)
+            if (cantidadVendida > 0 && medicamentoReferencia != null)
             {
-                var venta = new M_venta(valorTotal, (uint)cantidadVendida);
+                // Actualizar el total gastado de la persona
+                persona.Total_gastado += (uint)valorTotal;
+
+                // Crear y registrar la venta
+                var venta = new M_venta(medicamentoReferencia, valorTotal, (uint)cantidadVendida, persona);
                 Farmacia.l_ventas.Add(venta);
                 return true;
             }
 
-            return false;
+            return false; // No se pudo vender
         }
+
 
     }
 }

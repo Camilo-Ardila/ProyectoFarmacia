@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\m_venta_service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\inventarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\inventarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\m_compracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\m_compracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\m_compraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +17,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\inventarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\inventarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\personaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +43,12 @@
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\interfaces\\ipersonaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\interfaces\\ipersonaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,6 +77,23 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "M_CompraController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\M_CompraController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\M_CompraController.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\M_CompraController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\M_CompraController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwE0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T22:29:59.359Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "M_Venta_Service.cs",
@@ -80,14 +101,50 @@
               "RelativeDocumentMoniker": "MVC\\Services\\M_Venta_Service.cs",
               "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_Venta_Service.cs",
               "RelativeToolTip": "MVC\\Services\\M_Venta_Service.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAqwE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T21:25:40.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "M_CompraService.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_CompraService.cs",
+              "RelativeDocumentMoniker": "MVC\\Services\\M_CompraService.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_CompraService.cs",
+              "RelativeToolTip": "MVC\\Services\\M_CompraService.cs",
+              "ViewState": "AgIAACkAAACAr/kiyFwowDYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T05:32:19.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MVC.csproj",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\MVC.csproj",
+              "RelativeDocumentMoniker": "MVC\\MVC.csproj",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\MVC.csproj",
+              "RelativeToolTip": "MVC\\MVC.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-22T02:31:09.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T01:08:51.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "InventarioService.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\InventarioService.cs",
               "RelativeDocumentMoniker": "MVC\\Services\\InventarioService.cs",
@@ -95,8 +152,7 @@
               "RelativeToolTip": "MVC\\Services\\InventarioService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T21:13:50.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T21:13:50.398Z"
             },
             {
               "$type": "Document",
@@ -108,37 +164,11 @@
               "RelativeToolTip": "MVC\\Controllers\\InventarioController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwCgAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T21:12:23.197Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "M_CompraService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_CompraService.cs",
-              "RelativeDocumentMoniker": "MVC\\Services\\M_CompraService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_CompraService.cs",
-              "RelativeToolTip": "MVC\\Services\\M_CompraService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T05:32:19.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T21:12:23.197Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "MVC.csproj",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\MVC.csproj",
-              "RelativeDocumentMoniker": "MVC\\MVC.csproj",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\MVC.csproj",
-              "RelativeToolTip": "MVC\\MVC.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-22T02:31:09.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "PersonaService.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\PersonaService.cs",
               "RelativeDocumentMoniker": "MVC\\Services\\PersonaService.cs",
@@ -146,12 +176,11 @@
               "RelativeToolTip": "MVC\\Services\\PersonaService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T01:10:27.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T01:10:27.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\Home\\Privacy.cshtml",
@@ -163,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Program.cs",
               "RelativeDocumentMoniker": "MVC\\Program.cs",
@@ -175,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "IPersonaService.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Interfaces\\IPersonaService.cs",
               "RelativeDocumentMoniker": "MVC\\Interfaces\\IPersonaService.cs",
@@ -187,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "PersonaController.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\PersonaController.cs",
               "RelativeDocumentMoniker": "MVC\\Controllers\\PersonaController.cs",
@@ -196,18 +225,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-22T01:09:27.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MVC\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MVC\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T01:08:51.79Z"
             }
           ]
         }
