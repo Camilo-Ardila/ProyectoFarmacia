@@ -19,6 +19,8 @@ namespace BibliotecaFarmacia.Clases
             CC = cc;
             Telefono_persona = telefono_persona;
             Total_gastado = total_gastado;
+            Tipo = tipo;
+
         }
 
         public string Nombre_persona
@@ -64,6 +66,7 @@ namespace BibliotecaFarmacia.Clases
         }
 
         public uint Total_gastado { get => total_gastado; set => total_gastado = value; }
+        public string Tipo { get => tipo; set => tipo = value; }
 
     }
 }
