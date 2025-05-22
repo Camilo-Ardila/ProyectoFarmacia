@@ -74,9 +74,22 @@ namespace MVC.Controllers
         [HttpPost]
         public IActionResult ComprarMedicamentos(string nombre, ushort cantidad)
         {
+            var medicamento = Farmacia.l_disponibles.FirstOrDefault(m => m.Nom_medicamento.Equals(nombre, StringComparison.OrdinalIgnoreCase));
 
-            M_compra movimiento = new M_compra();
+            if (medicamento == null)
+            {
+                return NotFound("Medicamento no encontrado.");
+            }
+
+            M_compra compra = new M_compra(medicamento, medicamento.Precio_compra * cantidad, cantidad);
+
+            service.ComprarMedicamentos(medicamento, compra);
+
+            TempData["Success"] = "Medicamentos agregados al inventario exitosamente";
+
+            return RedirectToAction("Index");
         }
+
 
     }
 }

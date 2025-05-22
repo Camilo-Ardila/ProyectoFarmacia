@@ -44,7 +44,7 @@ namespace MVC.Services
             Farmacia.l_disponibles.Add(medicamento);
         }
 
-        public void ComprarMedicamento(Medicamento medicamento, M_compra movimiento)
+        public void ComprarMedicamentos(Medicamento medicamento, M_compra movimiento)
         {
             for (int i = 1; i <= movimiento.Cantidad_medicamentos; i++)
             {
