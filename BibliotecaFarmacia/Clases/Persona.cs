@@ -45,8 +45,6 @@ namespace BibliotecaFarmacia.Clases
                 if (value.Length < min_long || value.Length > max_long)
                     throw new Exception("El teléfono debe tener entre 7 y 10 números \n");
 
-                if (!validaciones.IsDigitsOnly(value))
-                    throw new Exception("El número de teléfono solo puede contener dígitos del 0 al 9 \n");
 
                 telefono_persona = value;
             }
@@ -59,14 +57,6 @@ namespace BibliotecaFarmacia.Clases
             {
                 if (value == null)
                     throw new Exception(validaciones.Mensaje_vacio);
-
-                if (value.Length < min_long || value.Length > max_long)
-                    throw new Exception("La cédula debe tener entre 7 y 10 números \n");
-
-                if (!validaciones.IsDigitsOnly(value))
-                    throw new Exception("La cédula solo puede contener dígitos del 0 al 9 \n");
-
-
 
                 cc = value;
             }

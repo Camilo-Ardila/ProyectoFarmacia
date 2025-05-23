@@ -1,5 +1,36 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model List<(BibliotecaFarmacia.Clases.Medicamento medicamento, uint cantidad)>
+
 @{
+    ViewData["Title"] = "Inventario disponible";
 }
+
+<h2>Inventario disponible</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Cantidad disponible</th>
+            <th>Precio venta (unidad)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.medicamento.Nom_medicamento</td>
+                <td>@item.medicamento.Tipo_med</td>
+                <td>@item.cantidad</td>
+                <td>$@item.medicamento.Precio_venta</td>
+                <td>
+                    <form asp-controller="Venta" asp-action="Agregar" method="post">
+                        <input type="hidden" name="nombreMedicamento" value="@item.medicamento.Nom_medicamento" />
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

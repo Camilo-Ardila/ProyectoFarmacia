@@ -64,7 +64,7 @@ namespace MVC.Controllers
         }
 
 
-        [HttpPost] 
+        [HttpPost]
         public IActionResult EliminarOpcion(string nombre)
         {
             service.EliminarOpción(nombre);

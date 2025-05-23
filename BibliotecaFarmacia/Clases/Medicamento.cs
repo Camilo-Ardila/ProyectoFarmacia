@@ -22,6 +22,8 @@ namespace BibliotecaFarmacia.Clases
             Precio_compra = precio_compra;
             Cantidad = cantidad;
             Tipo_med = tipo_med;
+
+            Precio_venta = (uint)(precio_compra * 1.5);
         }
 
         public string Nom_medicamento

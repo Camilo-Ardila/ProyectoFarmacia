@@ -75,3 +75,4 @@ C:\Users\david\Desktop\ProyectoFarmacia\MVC\MVC\obj\Debug\net8.0\refint\MVC.dll
 C:\Users\david\Desktop\ProyectoFarmacia\MVC\MVC\obj\Debug\net8.0\MVC.pdb
 C:\Users\david\Desktop\ProyectoFarmacia\MVC\MVC\obj\Debug\net8.0\MVC.genruntimeconfig.cache
 C:\Users\david\Desktop\ProyectoFarmacia\MVC\MVC\obj\Debug\net8.0\ref\MVC.dll
+C:\Users\camil\Desktop\ProyectoFarmacia\MVC\MVC\bin\Debug\net8.0\BibliotecaFarmacia.pdb
