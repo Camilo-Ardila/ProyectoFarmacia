@@ -14,9 +14,10 @@ namespace MVC
 
             // REGISTRAR EL SERVICIO DE INVENTARIO
             builder.Services.AddSingleton<InventarioService>();
-            builder.Services.AddScoped<M_CompraService>();
-            builder.Services.AddScoped<M_VentaService>();
-            builder.Services.AddScoped<PersonaService>();
+            builder.Services.AddSingleton<ArchivoService>();
+            builder.Services.AddSingleton<M_CompraService>();
+            builder.Services.AddSingleton<M_VentaService>();
+            builder.Services.AddSingleton<PersonaService>();
 
 
             var app = builder.Build();

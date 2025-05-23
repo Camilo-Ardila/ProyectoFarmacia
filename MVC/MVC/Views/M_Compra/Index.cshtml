@@ -1,13 +1,15 @@
-﻿﻿@using BibliotecaFarmacia.Clases
+﻿@using BibliotecaFarmacia.Clases
 @model List<Medicamento>
-
 
 @{
     ViewData["Title"] = "Módulo de Compras";
 }
 
 <div class="container mt-4">
-    <h2 class="text-center mb-4">Módulo de Compras</h2>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a asp-action="MostrarCarrito" class="btn btn-primary">🛒 Ver Carrito</a>
+        <h2 class="text-center flex-grow-1">Módulo de Compras</h2>
+    </div>
 
     @if (TempData["Success"] != null)
     {
@@ -20,7 +22,7 @@
     </form>
 
     <form class="d-flex gap-2 mb-3" method="get" asp-action="BuscarPorTipo">
-        <input name="tipo" class="form-control" placeholder="Buscar por tipo (capsulas, pasta, liquido)..." />
+        <input name="tipo" class="form-control" placeholder="Buscar por tipo..." />
         <button type="submit" class="btn btn-primary">Buscar</button>
     </form>
 
@@ -32,7 +34,7 @@
                 <th>Laboratorio</th>
                 <th>Precio</th>
                 <th>Vencimiento</th>
-                <th>Acciones</th>
+                <th>Agregar al carrito</th>
             </tr>
         </thead>
         <tbody>
@@ -42,58 +44,17 @@
                     <td>@m.Nom_medicamento</td>
                     <td>@m.Tipo_med</td>
                     <td>@m.Laboratorio</td>
-                    <td>@m.Precio_compra</td>
+                    <td>$@m.Precio_compra</td>
                     <td>@m.Fecha_vencimiento.ToShortDateString()</td>
-                    <td class="d-flex gap-2">
-                        <form method="post" asp-action="EliminarOpcion">
+                    <td>
+                        <form asp-action="AgregarAlCarrito" method="post" class="d-flex gap-2 align-items-center">
                             <input type="hidden" name="nombre" value="@m.Nom_medicamento" />
-                            <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
-                        </form>
-                        <form method="post" asp-action="ComprarMedicamentos">
-                            <input type="hidden" name="nombre" value="@m.Nom_medicamento" />
-                            <input type="number" name="cantidad" min="1" placeholder="Cant." class="form-control form-control-sm d-inline w-auto" />
-                            <button type="submit" class="btn btn-sm btn-success">Comprar</button>
+                            <input type="number" name="cantidad" min="1" value="1" class="form-control form-control-sm w-50" required />
+                            <button type="submit" class="btn btn-sm btn-outline-success">Agregar</button>
                         </form>
                     </td>
                 </tr>
             }
         </tbody>
     </table>
-
-    <h4 class="mt-5">Agregar Nuevo Medicamento</h4>
-    <form asp-action="AgregarOpcion" method="post" class="row g-3">
-        <div class="col-md-4">
-            <input type="text" name="tipo" class="form-control" placeholder="Tipo (capsulas, pasta, liquido)" required />
-        </div>
-        <div class="col-md-4">
-            <input type="text" name="nombre" class="form-control" placeholder="Nombre" required />
-        </div>
-        <div class="col-md-4">
-            <input type="text" name="laboratorio" class="form-control" placeholder="Laboratorio" required />
-        </div>
-        <div class="col-md-4">
-            <input type="date" name="fecha_vencimiento" class="form-control" required />
-        </div>
-        <div class="col-md-4">
-            <input type="number" name="precio_compra" class="form-control" placeholder="Precio" required />
-        </div>
-        <div class="col-md-4">
-            <input type="number" name="cantidad" class="form-control" placeholder="Cantidad" required />
-        </div>
-        <div class="col-md-4">
-            <input type="number" name="miligramos" class="form-control" placeholder="Miligramos (si aplica)" />
-        </div>
-        <div class="col-md-4">
-            <input type="number" name="mililitros" class="form-control" placeholder="Mililitros (si aplica)" />
-        </div>
-        <div class="col-md-4">
-            <input type="text" name="relleno" class="form-control" placeholder="Relleno (gel/polvo)" />
-        </div>
-        <div class="col-md-4">
-            <input type="text" name="envase" class="form-control" placeholder="Envase (plastico/vidrio)" />
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-outline-success">Agregar Medicamento</button>
-        </div>
-    </form>
 </div>

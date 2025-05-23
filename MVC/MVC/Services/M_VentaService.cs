@@ -90,7 +90,7 @@ namespace MVC.Services
                 persona.Total_gastado += (uint)valorTotal;
 
                 // Crear y registrar la venta
-                var venta = new M_venta(medicamentoReferencia, valorTotal, (uint)cantidadVendida, persona);
+                var venta = new M_venta(medicamentoReferencia, valorTotal, (uint)cantidadVendida, cc);
                 Farmacia.l_ventas.Add(venta);
                 return true;
             }

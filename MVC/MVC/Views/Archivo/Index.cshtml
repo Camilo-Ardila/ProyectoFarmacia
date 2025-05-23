@@ -1,0 +1,81 @@
+﻿@using System.Linq
+
+@model MVC.ViewModels.ArchivoViewModel
+
+@{
+    ViewData["Title"] = "Archivo - Farmacia";
+}
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Historial de Ventas y Compras</h2>
+
+    <div class="row g-4">
+
+        <!-- Ventas -->
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Ventas</h5>
+                </div>
+                <div class="card-body p-0">
+                    <table class="table table-striped table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Medicamento</th>
+                                <th>Valor</th>
+                                <th>Cantidad</th>
+                                <th>Persona</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var venta in Model.Ventas)
+                            {
+                                <tr>
+                                    <td>@venta.Fecha_creacion</td>
+                                    <td>@venta.Medicamento_objeto.Nom_medicamento</td>
+                                    <td>@venta.Valor_movimiento.ToString("C")</td>
+                                    <td>@venta.Cantidad_medicamentos</td>
+                                    <td>@venta.CC</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Compras -->
+        <div class="col-md-6">
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0">Compras</h5>
+                </div>
+                <div class="card-body p-0">
+                    <table class="table table-striped table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Medicamento</th>
+                                <th>Valor</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var compra in Model.Compras)
+                            {
+                                <tr>
+                                    <td>@compra.Fecha_creacion</td>
+                                    <td>@compra.Medicamento_objeto.Nom_medicamento</td>
+                                    <td>@compra.Valor_movimiento.ToString("C")</td>
+                                    <td>@compra.Cantidad_medicamentos</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

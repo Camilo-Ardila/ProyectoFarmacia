@@ -12,11 +12,10 @@ namespace BibliotecaFarmacia.Clases
     public class M_venta : Movimiento, IAplicarDescuento
     {
 
-
-        public M_venta(Medicamento medicamento, ulong valor_movimiento, uint cantidad_medicamentos, Persona persona)
+        public M_venta(Medicamento medicamento, ulong valor_movimiento, uint cantidad_medicamentos, string cc)
             : base(medicamento, valor_movimiento, cantidad_medicamentos)
         {
-
+            CC = cc;
         }
         public float descuento = 0.01f;
 
@@ -64,12 +63,6 @@ namespace BibliotecaFarmacia.Clases
             }
         }
 
-
-        // Propiedad con el total aplicado con descuento
-        public virtual void TotalConDescuento(uint total_gastado)
-        {
-            valor_movimiento = (ulong)(valor_movimiento - (valor_movimiento * descuento));
-        }
-
+        public string CC { get; set; }
     }
 }

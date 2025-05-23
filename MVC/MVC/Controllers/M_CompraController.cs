@@ -6,8 +6,7 @@ namespace MVC.Controllers
 {
     public class M_CompraController : Controller
     {
-
-        private static M_CompraService service;
+        private readonly M_CompraService service;
 
         public M_CompraController(M_CompraService servicio)
         {
@@ -16,7 +15,8 @@ namespace MVC.Controllers
 
         public IActionResult Index()
         {
-            return View(service.MostrarDisponibles());
+            var disponibles = service.MostrarDisponibles();
+            return View(disponibles);
         }
 
         [HttpGet]
@@ -35,8 +35,8 @@ namespace MVC.Controllers
 
         [HttpPost]
         public IActionResult AgregarOpcion(string tipo, string nombre, string laboratorio, DateTime fecha_vencimiento,
-                                   uint precio_compra, ushort cantidad, ushort miligramos = 0,
-                                   ushort mililitros = 0, string relleno = null, string envase = null)
+                                           uint precio_compra, ushort cantidad, ushort miligramos = 0,
+                                           ushort mililitros = 0, string relleno = null, string envase = null)
         {
             Medicamento nuevo;
 
@@ -63,7 +63,6 @@ namespace MVC.Controllers
             return RedirectToAction("Index");
         }
 
-
         [HttpPost]
         public IActionResult EliminarOpcion(string nombre)
         {
@@ -72,7 +71,7 @@ namespace MVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult ComprarMedicamentos(string nombre, ushort cantidad)
+        public IActionResult AgregarAlCarrito(string nombre, ushort cantidad)
         {
             var medicamento = Farmacia.l_disponibles.FirstOrDefault(m => m.Nom_medicamento.Equals(nombre, StringComparison.OrdinalIgnoreCase));
 
@@ -81,15 +80,36 @@ namespace MVC.Controllers
                 return NotFound("Medicamento no encontrado.");
             }
 
-            M_compra compra = new M_compra(medicamento, medicamento.Precio_compra * cantidad, cantidad);
+            if (cantidad == 0)
+            {
+                TempData["Error"] = "No se puede agregar una cantidad cero.";
+                return RedirectToAction("Index");
+            }
 
-            service.ComprarMedicamentos(medicamento, compra);
+            var compra = new M_compra(medicamento, medicamento.Precio_compra * cantidad, cantidad);
 
-            TempData["Success"] = "Medicamentos agregados al inventario exitosamente";
+            service.AgregarAlCarrito(medicamento, compra);
 
+            TempData["Success"] = $"{compra.Medicamento_objeto.Nom_medicamento} agregado al carrito exitosamente.";
             return RedirectToAction("Index");
         }
 
+        [HttpGet]
+        public IActionResult MostrarCarrito()
+        {
+            var carrito = service.MostrarCarrito();
 
+            return View("Carrito", carrito); 
+        }
+
+        [HttpPost]
+        public IActionResult ComprarCarrito()
+        {
+            service.CarritoCompras();
+
+            TempData["Success"] = "Compra finalizada exitosamente.";
+
+            return RedirectToAction("Index");
+        }
     }
 }
