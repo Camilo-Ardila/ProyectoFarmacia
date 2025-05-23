@@ -1,5 +1,5 @@
 ﻿using System;
-using BibliotecaFarmacia.Interfaces; // Asegúrate de importar la interfaz
+using BibliotecaFarmacia.Interfaces;
 
 namespace BibliotecaFarmacia.Clases
 {
@@ -10,23 +10,28 @@ namespace BibliotecaFarmacia.Clases
         public string cc = "";
         public string telefono_persona = "";
         public ValidacionesGenerales validaciones = new ValidacionesGenerales();
-        public byte min_long = 7, max_long = 10;
+        public byte min_long = 7, max_long = 15;
         private uint total_gastado = 0;
 
-        public Persona(string nombre_persona, string cc, string telefono_persona,uint total_gastado,  string tipo)
+        // ✅ Constructor vacío requerido por ASP.NET Core
+        public Persona()
+        {
+        }
+
+        // ✅ Constructor adicional con parámetros (opcional)
+        public Persona(string nombre_persona, string cc, string telefono_persona, uint total_gastado, string tipo)
         {
             Nombre_persona = nombre_persona;
             CC = cc;
             Telefono_persona = telefono_persona;
             Total_gastado = total_gastado;
             Tipo = tipo;
-
         }
 
         public string Nombre_persona
         {
             get => nombre_persona;
-            set => nombre_persona = value == null ? throw new Exception("El nombre de la persona no puede estar vacío \n") : value;
+            set => nombre_persona = value ?? throw new Exception("El nombre de la persona no puede estar vacío \n");
         }
 
         public string Telefono_persona
@@ -61,12 +66,22 @@ namespace BibliotecaFarmacia.Clases
                 if (!validaciones.IsDigitsOnly(value))
                     throw new Exception("La cédula solo puede contener dígitos del 0 al 9 \n");
 
+
+
                 cc = value;
             }
         }
 
-        public uint Total_gastado { get => total_gastado; set => total_gastado = value; }
-        public string Tipo { get => tipo; set => tipo = value; }
+        public uint Total_gastado
+        {
+            get => total_gastado;
+            set => total_gastado = value;
+        }
 
+        public string Tipo
+        {
+            get => tipo;
+            set => tipo = value;
+        }
     }
 }

@@ -17,12 +17,11 @@ namespace MVC.Services
 
         public List<Medicamento> BuscarPorMedicamento(string nombreParcial)
         {
-            var medicamentosEncontrados = Inventario.l_inventario
+            return Inventario.l_inventario
                 .Where(p => p.nom_medicamento.ToLower().Contains(nombreParcial.ToLower()))
                 .ToList();
-
-            return medicamentosEncontrados;
         }
+
 
         public List<Medicamento> ListarTipo(string tipo_med)
         {
@@ -32,36 +31,23 @@ namespace MVC.Services
         }
 
         // Método Eliminar solicitado
-        public bool Eliminar(string nom_medicamento, int cantidadAEliminar)
+        public bool Eliminar(string nom_medicamento)
         {
-            var medicamentos = Inventario.l_inventario
+            // Buscar el medicamento con ese nombre que tenga la fecha de vencimiento más próxima
+            var medicamento = Inventario.l_inventario
                 .Where(p => p.nom_medicamento.ToLower() == nom_medicamento.ToLower())
                 .OrderBy(p => p.fecha_vencimiento)
-                .ToList();
+                .FirstOrDefault();
 
-            int cantidadEliminada = 0;
+            if (medicamento == null)
+                return false;
 
-            foreach (var med in medicamentos)
-            {
-                if (cantidadEliminada >= cantidadAEliminar)
-                    break;
-
-                int unidadesRestantes = cantidadAEliminar - cantidadEliminada;
-
-                if (med.Cantidad <= unidadesRestantes)
-                {
-                    cantidadEliminada += med.Cantidad;
-                    Inventario.l_inventario.Remove(med);
-                }
-                else
-                {
-                    med.Cantidad -= (ushort)unidadesRestantes;
-                    cantidadEliminada += unidadesRestantes;
-                }
-            }
-
-            return cantidadEliminada == cantidadAEliminar;
+            Inventario.l_inventario.Remove(medicamento);
+            return true;
         }
+
+
+
 
     }
 }

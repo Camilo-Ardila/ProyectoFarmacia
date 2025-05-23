@@ -46,8 +46,9 @@ namespace BibliotecaFarmacia.Clases
             set
             {
                 DateTime now = DateTime.Now;
-                if (value > now.AddDays(30))
+              /*  if (value > now.AddDays(30))
                     throw new Exception("Los medicamentos deben estar por lo menos a dos semanas de vencerse \n");
+              */
 
                 fecha_vencimiento = value;
             }

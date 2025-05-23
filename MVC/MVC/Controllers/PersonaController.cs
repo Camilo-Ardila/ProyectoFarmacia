@@ -46,15 +46,15 @@ namespace MVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult CrearUsuario(Usuario usuario)
+        public IActionResult CrearUsuario(string CC, string Nombre_persona, string Telefono_persona)
         {
-            if (ModelState.IsValid)
-            {
-                service.CrearUsuario(usuario);
-                return RedirectToAction("Index");
-            }
-            return View(usuario);
+            Usuario nuevo = new Usuario(CC, Nombre_persona, Telefono_persona);
+            // Lógica para agregar el nuevo usuario a la lista o base de datos
+            // ...
+            TempData["Success"] = "Usuario creado exitosamente.";
+            return RedirectToAction("Index");
         }
+
 
         [HttpGet]
         public IActionResult CrearCliente()

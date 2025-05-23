@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MVC.Services;
 using BibliotecaFarmacia.Clases;
 
@@ -15,40 +13,50 @@ namespace MVC.Controllers
             _service = service;
         }
 
-        // GET: Muestra todo el inventario
+        // GET: Muestra todo el inventario (usando MostrarDisponibles)
         public IActionResult Index()
         {
-            var inventario = Inventario.l_inventario;
+            var inventario = _service.MostrarDisponibles();
             return View(inventario);
         }
 
-        // POST: Elimina un medicamento por nombre y cantidad
+        // POST: Elimina un medicamento por nombre
         [HttpPost]
-        [ActionName("EliminarPorNombre")]
-        public IActionResult EliminarPorNombre(string nom_medicamento, int cantidad)
+        public IActionResult EliminarPorNombre(string nom_medicamento)
         {
-            if (!string.IsNullOrWhiteSpace(nom_medicamento) && cantidad > 0)
+            if (!string.IsNullOrWhiteSpace(nom_medicamento))
             {
-                _service.Eliminar(nom_medicamento, cantidad);
+                _service.Eliminar(nom_medicamento);
             }
 
             return RedirectToAction("Index");
         }
 
-        // POST: Elimina múltiples medicamentos (cada uno con nombre y cantidad)
-        [HttpPost]
-        [ActionName("Eliminar")]
-        public IActionResult EliminarMultiple([FromForm] Medicamento[] l_inventario)
+        // GET: Buscar medicamentos por nombre parcial
+        [HttpGet]
+        public IActionResult Buscar(string nombre)
         {
-            foreach (var med in l_inventario)
+            if (string.IsNullOrWhiteSpace(nombre))
             {
-                if (!string.IsNullOrWhiteSpace(med.nom_medicamento) && med.Cantidad > 0)
-                {
-                    _service.Eliminar(med.nom_medicamento, med.Cantidad);
-                }
+                return RedirectToAction("Index");
             }
 
-            return RedirectToAction("Index");
+            var resultados = _service.BuscarPorMedicamento(nombre);
+            return View("Index", resultados); // Reutiliza la vista Index para mostrar resultados
+        }
+
+        // GET: Filtrar medicamentos por tipo
+        [HttpGet]
+        public IActionResult FiltrarPorTipo(string tipo)
+        {
+            if (string.IsNullOrWhiteSpace(tipo))
+            {
+                return RedirectToAction("Index");
+            }
+
+            var resultados = _service.ListarTipo(tipo);
+            return View("Index", resultados); // Reutiliza la vista Index para mostrar resultados
         }
     }
 }
+

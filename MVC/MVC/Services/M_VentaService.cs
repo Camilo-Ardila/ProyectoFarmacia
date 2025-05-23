@@ -2,7 +2,7 @@
 
 namespace MVC.Services
 {
-    public class M_Venta_Service
+    public class M_VentaService
     {
 
         public List<Medicamento> MostrarDisponibles()

@@ -1,8 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio - Farmacia";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center mt-4">
+    <h1 class="display-4">Sistema de Gestión de Farmacia</h1>
+    <p class="lead">Accede a los módulos principales del sistema.</p>
+</div>
+
+<div class="mt-5 d-flex justify-content-center gap-4 flex-wrap">
+    <a asp-controller="M_Compra" asp-action="Index" class="btn btn-outline-primary btn-lg">
+        Módulo de Compras
+    </a>
+    <a asp-controller="Inventario" asp-action="Index" class="btn btn-outline-success btn-lg">
+        Módulo de Inventario
+    </a>
+    <a asp-controller="Persona" asp-action="Index" class="btn btn-outline-info btn-lg">
+        Módulo de Personas
+    </a>
+    <a asp-controller="Venta" asp-action="Index" class="btn btn-outline-danger btn-lg">
+        Módulo de Ventas
+    </a>
 </div>

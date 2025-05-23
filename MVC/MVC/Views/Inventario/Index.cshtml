@@ -1,0 +1,91 @@
+﻿@model List<BibliotecaFarmacia.Clases.Medicamento>
+@{
+    ViewData["Title"] = "Inventario";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center">Inventario de Medicamentos</h2>
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <form asp-action="Buscar" method="get" class="input-group">
+                <input type="text" name="nombre" class="form-control" placeholder="Buscar por nombre parcial..." />
+                <button type="submit" class="btn btn-primary">Buscar</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form asp-action="FiltrarPorTipo" method="get" class="input-group">
+                <input type="text" name="tipo" class="form-control" placeholder="Filtrar por tipo..." />
+                <button type="submit" class="btn btn-secondary">Filtrar</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    @if (Model != null && Model.Count > 0)
+    {
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Cantidad</th>
+                    <th>Fecha de Vencimiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr onclick="seleccionarMedicamento('@item.nom_medicamento')" style="cursor:pointer;" title="Haz clic para seleccionar este medicamento para eliminar">
+                        <td>@item.nom_medicamento</td>
+                        <td>@item.Tipo_med</td>
+                        <td>@item.Cantidad</td>
+                        <td>@item.fecha_vencimiento.ToShortDateString()</td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-info">No hay medicamentos en el inventario.</div>
+    }
+
+    <hr />
+
+    <h4 class="mt-5">Eliminar Medicamento Manualmente</h4>
+    <form asp-action="EliminarPorNombre" method="post" class="row g-3">
+        <div class="col-md-10">
+            <label for="nom_medicamento" class="form-label">Nombre del Medicamento</label>
+            <input type="text" class="form-control" name="nom_medicamento" required />
+        </div>
+        <div class="col-md-2 align-self-end">
+            <button type="submit" class="btn btn-danger w-100">Eliminar</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        function eliminarMedicamento(nombre) {
+            if (confirm(`¿Deseas eliminar solo **un registro** del medicamento: "${nombre}"?`)) {
+
+                fetch(`/InventarioController/EliminarPorNombre?nom_medicamento=${encodeURIComponent(nombre)}`, {
+                    method: 'POST'
+                })
+                .then(response => {
+                    if (response.redirected) {
+                        window.location.href = response.url; // Redirige al Index
+                    }
+                });
+            }
+        }
+         
+        function seleccionarMedicamento(nombre) {
+            // Rellena el campo de nombre en el formulario de eliminación
+            document.querySelector('input[name="nom_medicamento"]').value = nombre;
+        }
+   
+    </script>
+}
