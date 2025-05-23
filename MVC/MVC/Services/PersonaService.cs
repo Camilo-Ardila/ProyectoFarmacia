@@ -4,7 +4,7 @@ using MVC.Interfaces;
 
 namespace MVC.Services
 {
-    public class PersonaService: IPersonaService
+    public class PersonaService : IPersonaService
     {
         public int limite_usuario = 1000000;
 
@@ -24,31 +24,50 @@ namespace MVC.Services
             Farmacia.l_personas.Add(cliente);
         }
 
-        public void ActualizarPersona(string cc, string nombre, string telefono)
+        public void ActualizarPersona(string cc, string nombre, string telefono, string tipo)
         {
             Persona persona = Farmacia.l_personas.FirstOrDefault(p => p.CC == cc);
 
-            persona.Nombre_persona = nombre;
-            persona.Telefono_persona = telefono;
+            if (persona != null)
+            {
+                persona.Nombre_persona = nombre;
+                persona.Telefono_persona = telefono;
+                persona.Tipo = tipo;
+            }
         }
 
-        public List<Persona> BuscarPorNombre(string nombreParcial)
+
+        public List<Persona> BuscarPorNombre(string nombre)
         {
-            var personasEncontradas = Farmacia.l_personas
-                .Where(p => p.Nombre_persona.ToLower().Contains(nombreParcial.ToLower()))
+            if (string.IsNullOrWhiteSpace(nombre))
+                return Farmacia.l_personas;
+
+            var nombreBuscado = nombre.Trim().ToLower();
+
+            var resultado = Farmacia.l_personas
+                .Where(p => !string.IsNullOrWhiteSpace(p.Nombre_persona) &&
+                            p.Nombre_persona.ToLower().Contains(nombreBuscado))
                 .ToList();
 
-            return personasEncontradas;
+            Console.WriteLine($"Buscando '{nombreBuscado}' -> {resultado.Count} resultados");
+            return resultado;
         }
+
 
         public List<Persona> BuscarPorCC(string cc)
         {
-            var personasEncontradas = Farmacia.l_personas
-                .Where(p => p.CC.Contains(cc.ToLower()))
-                .ToList();
+            if (string.IsNullOrWhiteSpace(cc))
+                return Farmacia.l_personas;
 
-            return personasEncontradas;
+            cc = cc.Trim().ToLower();
+
+            return Farmacia.l_personas
+                .Where(p => !string.IsNullOrWhiteSpace(p.CC) &&
+                            p.CC.ToLower().Contains(cc))
+                .ToList();
         }
+
+
 
         public List<Persona> ListarTipo(string tipo)
         {
@@ -74,7 +93,7 @@ namespace MVC.Services
                 {
 
                     Cliente cliente = new Cliente(persona.CC, persona.Nombre_persona, persona.Telefono_persona);
-                                    
+
                     Farmacia.l_personas.Remove(persona);
                     Farmacia.l_personas.Add(cliente);
 

@@ -12,8 +12,8 @@ namespace BibliotecaFarmacia.Clases
         const int eq = 1000;
 
         public Publisher_P_Acumulados notificacion_puntos;
-        public Cliente(string nombre_persona, string cc, string telefono_persona, uint total_gastado=0, uint ptos=0, string tipo = "cliente")
-            : base(nombre_persona, cc, telefono_persona,total_gastado, tipo)
+        public Cliente(string nombre_persona, string cc, string telefono_persona, uint total_gastado = 0, uint ptos = 0, string tipo = "cliente")
+    : base(nombre_persona, cc, telefono_persona, total_gastado, tipo)
         {
             Total_gastado = total_gastado;
             Ptos = ptos;
@@ -23,8 +23,9 @@ namespace BibliotecaFarmacia.Clases
             notificacion_puntos.evento_ptos += EventHandler;
         }
 
+
         // Evento: instancia del publicador
-        
+
 
         public uint Total_gastado
         {
@@ -38,7 +39,7 @@ namespace BibliotecaFarmacia.Clases
             set => ptos = value;
         }
 
-        
+
 
         // Manejador del evento
         public void EventHandler(uint nuevosPuntos)
@@ -50,7 +51,7 @@ namespace BibliotecaFarmacia.Clases
         // Simulación de compra para generar puntos
         public void calcularptos(string cc, uint val_movimiento)
         {
-            
+
 
             // Buscar a la persona con la cédula dada
             var persona = Farmacia.l_personas.Find(p => p.CC == cc);
@@ -75,6 +76,6 @@ namespace BibliotecaFarmacia.Clases
 
 
         // Método override para aplicar descuento
-        
+
     }
 }

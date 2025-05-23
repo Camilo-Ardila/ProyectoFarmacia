@@ -7,12 +7,13 @@ namespace BibliotecaFarmacia.Clases
     {
         public Publisher_Pasar_A_Cliente notificacion_cliente;
 
-        public Usuario(string nombre_persona, string cc,  string telefono_persona,uint total_gastado=0, string tipo = "usuario")
-            : base(nombre_persona, cc, tipo,total_gastado, telefono_persona)
+        public Usuario(string nombre_persona, string cc, string telefono_persona, uint total_gastado = 0, string tipo = "usuario")
+    : base(nombre_persona, cc, telefono_persona, total_gastado, tipo)
         {
         }
 
-        
+
+
         // Método para suscribirse al evento
         public void Suscribirse(Publisher_Pasar_A_Cliente publisher)
         {
@@ -32,9 +33,9 @@ namespace BibliotecaFarmacia.Clases
                 // Sumar el valor del movimiento al total gastado
                 usuario.Total_gastado += val_movimiento;
 
-              
 
-                
+
+
             }
             else
             {

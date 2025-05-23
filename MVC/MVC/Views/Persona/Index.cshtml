@@ -1,119 +1,124 @@
 ﻿@using BibliotecaFarmacia.Clases
 @model List<Persona>
 
-@{
-    ViewData["Title"] = "Gestión de Personas";
-}
-
-<div class="container mt-4">
-    <h2 class="text-center mb-4">Gestión de Personas</h2>
-
-    @if (TempData["Success"] != null)
-    {
-        <div class="alert alert-success">@TempData["Success"]</div>
+    @{
+        ViewData["Title"] = "Gestión de Personas";
     }
 
-    <!-- BUSCAR -->
-    <div class="row mb-4">
-        <div class="col-md-4">
-            <form class="d-flex gap-2" method="get" asp-action="BuscarPorNombre">
-                <input name="nombre" class="form-control" placeholder="Buscar por nombre..." />
-                <button type="submit" class="btn btn-primary">Buscar</button>
-            </form>
-        </div>
-        <div class="col-md-4">
-            <form class="d-flex gap-2" method="get" asp-action="BuscarPorCC">
-                <input name="cc" class="form-control" placeholder="Buscar por CC..." />
-                <button type="submit" class="btn btn-primary">Buscar</button>
-            </form>
-        </div>
-        <div class="col-md-4">
-            <form class="d-flex gap-2" method="get" asp-action="ListarPorTipo">
-                <select name="tipo" class="form-select">
-                    <option value="">-- Tipo --</option>
-                    <option value="usuario">Usuario</option>
-                    <option value="cliente">Cliente</option>
-                </select>
-                <button type="submit" class="btn btn-primary">Filtrar</button>
-            </form>
-        </div>
-    </div>
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Gestión de Personas</h2>
 
-    <!-- TABLA -->
-    <table class="table table-striped table-bordered">
-        <thead class="table-dark">
-            <tr>
-                <th>CC</th>
-                <th>Nombre</th>
-                <th>Teléfono</th>
-                <th>Tipo</th>
-                <th>Total Gastado</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var persona in Model)
-            {
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">@TempData["Success"]</div>
+        }
+
+        <!-- BUSCAR -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <form class="d-flex gap-2" method="get" asp-action="BuscarPorCC">
+                    <input name="cc" class="form-control" placeholder="Buscar por nombre..." />
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <form class="d-flex gap-2" method="get" asp-action="BuscarPorNombre">
+                    <input name="nombre" class="form-control" placeholder="Buscar por cc..." />
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <form class="d-flex gap-2" method="get" asp-action="ListarPorTipo">
+                    <select name="tipo" class="form-select">
+                        <option value="">-- Tipo --</option>
+                        <option value="usuario">Usuario</option>
+                        <option value="cliente">Cliente</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">Filtrar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- TABLA -->
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
                 <tr>
-                    <td>@persona.CC</td>
-                    <td>@persona.Nombre_persona</td>
-                    <td>@persona.Telefono_persona</td>
-                    <td>@persona.Tipo</td>
-                    <td>@persona.Total_gastado</td>
-                    <td class="d-flex flex-wrap gap-2">
-                        <!-- Formulario de actualización -->
-                        <form method="post" asp-action="Actualizar" class="d-flex gap-1 flex-wrap">
-                            <input type="hidden" name="cc" value="@persona.CC" />
-                            <input type="text" name="nombre" class="form-control form-control-sm" value="@persona.Nombre_persona" placeholder="Nombre" required />
-                            <input type="text" name="telefono" class="form-control form-control-sm" value="@persona.Telefono_persona" placeholder="Teléfono" required />
-                            <button type="submit" class="btn btn-sm btn-warning">Actualizar</button>
-                        </form>
-
-                        <!-- Botón para pasar a cliente -->
-                        @if (persona.Tipo.ToLower() == "usuario")
-                        {
-                            <form method="post" asp-action="PasarACliente">
-                                <input type="hidden" name="cc" value="@persona.CC" />
-                                <button type="submit" class="btn btn-sm btn-success">Pasar a Cliente</button>
-                            </form>
-                        }
-                    </td>
+                    <th>CC</th>
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Tipo</th>
+                    <th>Total Gastado</th>
+                    <th>Acciones</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+            <tbody>
+                @foreach (var persona in Model)
+                {
+                    <tr>
+                        <td>@persona.Nombre_persona</td>
+                        <td>@persona.CC</td>
+                        <td>@persona.Telefono_persona</td>
+                        <td>@persona.Tipo</td>
+                        <td>@persona.Total_gastado</td>
+                        <td class="d-flex flex-wrap gap-2">
+                            <!-- Formulario de actualización -->
+                            <form method="post" asp-action="Actualizar" class="d-flex gap-1 flex-wrap">
+                                <input type="hidden" name="cc" value="@persona.CC" />
+                                <input type="hidden" name="tipo" value="@persona.Tipo" /> <!-- mantener el tipo original -->
+                                <input type="text" name="nombre" class="form-control form-control-sm" value="@persona.Nombre_persona" placeholder="Nombre" required />
 
-    <!-- FORMULARIO CREAR USUARIO -->
-    <h4 class="mt-5">Crear Nuevo Usuario</h4>
-    <form asp-action="CrearUsuario" method="post" class="row g-3 mb-4">
-        <div class="col-md-4">
-            <input type="text" name="CC" class="form-control" placeholder="Cédula" required />
-        </div>
-        <div class="col-md-4">
-            <input type="text" name="Nombre_persona" class="form-control" placeholder="Nombre" required />
-        </div>
-        <div class="col-md-4">
-            <input type="text" name="Telefono_persona" class="form-control" placeholder="Teléfono" required />
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-outline-primary">Crear Usuario</button>
-        </div>
-    </form>
+                                <input type="text" name="telefono" class="form-control form-control-sm" value="@persona.Telefono_persona" placeholder="Teléfono" required />
+                                <button type="submit" class="btn btn-sm btn-warning">Actualizar</button>
+                            </form>
 
-    <!-- FORMULARIO CREAR CLIENTE -->
-    <h4 class="mt-4">Crear Nuevo Cliente</h4>
-    <form asp-action="CrearCliente" method="post" class="row g-3">
-        <div class="col-md-4">
-            <input type="text" name="CC" class="form-control" placeholder="Cédula" required />
-        </div>
-        <div class="col-md-4">
-            <input type="text" name="Nombre_persona" class="form-control" placeholder="Nombre" required />
-        </div>
-        <div class="col-md-4">
-            <input type="text" name="Telefono_persona" class="form-control" placeholder="Teléfono" required />
-        </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-outline-success">Crear Cliente</button>
-        </div>
-    </form>
-</div>
+
+
+                            <!-- Botón para pasar a cliente -->
+                            @if (persona.Tipo.ToLower() == "usuario")
+                            {
+                                <form method="post" asp-action="PasarACliente">
+                                    <input type="hidden" name="cc" value="@persona.CC" />
+                                    <button type="submit" class="btn btn-sm btn-success">Pasar a Cliente</button>
+                                </form>
+                            }
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <!-- FORMULARIO CREAR USUARIO -->
+        <h4 class="mt-5">Crear Nuevo Usuario</h4>
+        <form asp-action="CrearUsuario" method="post" class="row g-3 mb-4">
+            <div class="col-md-4">
+                <input type="text" name="CC" class="form-control" placeholder="Cédula" required />
+            </div>
+            <div class="col-md-4">
+                <input type="text" name="Nombre_persona" class="form-control" placeholder="Nombre" required />
+            </div>
+            <div class="col-md-4">
+                <input type="text" name="Telefono_persona" class="form-control" placeholder="Teléfono" required />
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-outline-primary">Crear Usuario</button>
+            </div>
+        </form>
+
+        <!-- FORMULARIO CREAR CLIENTE -->
+        <h4 class="mt-4">Crear Nuevo Cliente</h4>
+        <form asp-action="CrearCliente" method="post" class="row g-3">
+            <div class="col-md-4">
+                <input type="text" name="CC" class="form-control" placeholder="Cédula" required />
+            </div>
+            <div class="col-md-4">
+                <input type="text" name="Nombre_persona" class="form-control" placeholder="Nombre" required />
+            </div>
+            <div class="col-md-4">
+                <input type="text" name="Telefono_persona" class="form-control" placeholder="Teléfono" required />
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-outline-success">Crear Cliente</button>
+            </div>
+        </form>
+    </div>
