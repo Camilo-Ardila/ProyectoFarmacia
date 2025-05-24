@@ -7,16 +7,21 @@ namespace BibliotecaFarmacia.Eventos
 
     public class Publisher_Reorden
     {
-        // Evento que será disparado cuando queden 10 o menos unidades
         public event DelegadoExistencias evento_existencias;
 
-        // Método que verifica si es necesario disparar el evento
-        public void Informar_reorden(Medicamento l_medicamentos)
+        public void Informar_reorden(List<Medicamento> medicamentos)
         {
-            if (l_medicamentos.Cantidad <= 10)
+            // Construir agrupación primero
+            Farmacia.ConstruirInventarioAgrupado();
+
+            foreach (var (medicamento, cantidad) in Farmacia.inventario)
             {
-                evento_existencias?.Invoke(l_medicamentos); // Disparar evento
+                if (cantidad <= 10)
+                {
+                    evento_existencias?.Invoke(medicamento);
+                }
             }
         }
     }
+
 }

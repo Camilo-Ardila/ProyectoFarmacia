@@ -1,5 +1,4 @@
 C:\Users\david\Desktop\ProyectoFarmacia\BibliotecaFarmacia\bin\Debug\net8.0\BibliotecaFarmacia.deps.json
-C:\Users\david\Desktop\ProyectoFarmacia\BibliotecaFarmacia\bin\Debug\net8.0\BibliotecaFarmacia.dll
 C:\Users\david\Desktop\ProyectoFarmacia\BibliotecaFarmacia\bin\Debug\net8.0\BibliotecaFarmacia.pdb
 C:\Users\david\Desktop\ProyectoFarmacia\BibliotecaFarmacia\obj\Debug\net8.0\BibliotecaFarmacia.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\david\Desktop\ProyectoFarmacia\BibliotecaFarmacia\obj\Debug\net8.0\BibliotecaFarmacia.AssemblyInfoInputs.cache
@@ -22,3 +21,4 @@ C:\Users\camil\Desktop\ProyectoFarmacia\BibliotecaFarmacia\obj\Debug\net8.0\Bibl
 C:\Users\camil\Desktop\ProyectoFarmacia\BibliotecaFarmacia\obj\Debug\net8.0\refint\BibliotecaFarmacia.dll
 C:\Users\camil\Desktop\ProyectoFarmacia\BibliotecaFarmacia\obj\Debug\net8.0\BibliotecaFarmacia.pdb
 C:\Users\camil\Desktop\ProyectoFarmacia\BibliotecaFarmacia\obj\Debug\net8.0\ref\BibliotecaFarmacia.dll
+C:\Users\david\Desktop\ProyectoFarmacia\BibliotecaFarmacia\bin\Debug\net8.0\BibliotecaFarmacia.dll

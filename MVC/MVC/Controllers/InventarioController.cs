@@ -17,8 +17,20 @@ namespace MVC.Controllers
         public IActionResult Index()
         {
             var inventario = _service.MostrarDisponibles();
+
+            // Verificación de eventos
+            if (_service is ServicioInventarioConcreto servicio)
+            {
+                servicio.InventarioInstancia.VerificarInventario();
+
+                // Pasa mensajes a la vista mediante ViewBag
+                ViewBag.Mensajes = servicio.InventarioInstancia.MensajesEventos;
+            }
+
             return View(inventario);
         }
+
+
 
         // POST: Elimina un medicamento por nombre
         [HttpPost]

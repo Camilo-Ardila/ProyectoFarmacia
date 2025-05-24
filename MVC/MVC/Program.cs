@@ -42,9 +42,9 @@ namespace MVC
 
             // CARGA DE DATOS INICIALES
 
-            DateTime vencimientoProximo = DateTime.Now.AddDays(10);
+            DateTime vencimientoProximo = DateTime.Now.AddDays(100);
 
-            Farmacia.l_disponibles.Add(new M_capsula("Paracetamol", "Genfar", vencimientoProximo, 300, 100, 500, "gel"));
+            Farmacia.l_disponibles.Add(new M_capsula("Paracetamol", "Genfar", (DateTime.Now), 300, 100, 500, "gel"));
             Farmacia.l_disponibles.Add(new M_capsula("Ibuprofeno", "MK", vencimientoProximo, 450, 80, 400, "polvo"));
             Farmacia.l_disponibles.Add(new M_capsula("Omeprazol", "La Santé", vencimientoProximo, 600, 50, 20, "gel"));
             Farmacia.l_disponibles.Add(new M_capsula("Amoxicilina", "Siegfried", vencimientoProximo, 550, 120, 250, "polvo"));

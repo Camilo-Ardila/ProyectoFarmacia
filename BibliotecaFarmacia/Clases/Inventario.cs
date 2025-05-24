@@ -1,45 +1,56 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using BibliotecaFarmacia.Clases;
 using BibliotecaFarmacia.Eventos;
 
-namespace BibliotecaFarmacia.Clases
+public abstract class Inventario
 {
-    public abstract class Inventario
+    public static List<Medicamento> l_inventario = new List<Medicamento>();
+    public Publisher_Reorden notificacion_reorden = new Publisher_Reorden();
+    public Publisher_Vencimiento notificacion_vencimiento = new Publisher_Vencimiento();
+
+    public List<string> MensajesEventos { get; private set; } = new List<string>();
+
+    protected Inventario()
     {
-        public static List<Medicamento> l_inventario = new List<Medicamento>();
-        public Publisher_Reorden notificacion_reorden = new Publisher_Reorden();
-        public Publisher_Vencimiento notificacion_vencimiento = new Publisher_Vencimiento();
+        notificacion_reorden.evento_existencias += EventHandler;
+        notificacion_vencimiento.evento_fecha += EventHandler;
+    }
 
-        // Constructor protegido
-        protected Inventario()
+    public void VerificarInventario()
+    {
+        // Recalcular agrupación antes de emitir eventos
+        Farmacia.ConstruirInventarioAgrupado();
+
+        MensajesEventos.Clear();
+
+        notificacion_reorden.Informar_reorden(Inventario.l_inventario);
+
+        foreach (var med in l_inventario)
         {
-            // Suscripciones a eventos dentro del constructor
-            notificacion_reorden.evento_existencias += EventHandler;
-            notificacion_vencimiento.evento_fecha += EventHandler;
-        }
-
-        // Método que verifica si debe haber reorden o alerta de vencimiento
-        public void VerificarInventario()
-        {
-            foreach (var med in l_inventario)
-            {
-                notificacion_reorden.Informar_reorden(med);
-                notificacion_vencimiento.Informar_Vencimiento(med);
-            }
-        }
-
-        // Manejador de ambos eventos
-        public void EventHandler(Medicamento med)
-        {
-            if (med.Cantidad <= 10)
-            {
-                Console.WriteLine($"¡Advertencia! El medicamento '{med.Nom_medicamento}' tiene solo {med.Cantidad} unidades. Se requiere reorden.");
-            }
-
-            if ((med.Fecha_vencimiento - DateTime.Now).TotalDays <= 30)
-            {
-                Console.WriteLine($"¡Atención! El medicamento '{med.Nom_medicamento}' vencerá el {med.Fecha_vencimiento:dd/MM/yyyy}. Se debe retirar pronto.");
-            }
+            notificacion_vencimiento.Informar_Vencimiento(med);
         }
     }
+
+
+
+
+    public void EventHandler(Medicamento med)
+    {
+        // Buscar cantidad directamente desde Farmacia.inventario
+        var entry = Farmacia.inventario.FirstOrDefault(x =>
+            x.medicamento.Nom_medicamento.ToLower() == med.Nom_medicamento.ToLower());
+
+        if (entry.cantidad <= 10)
+        {
+            MensajesEventos.Add($"¡Advertencia! Solo hay {entry.cantidad} registros de '{med.Nom_medicamento}'.");
+        }
+
+        // Verifica vencimiento como antes
+        if ((med.Fecha_vencimiento - DateTime.Now).TotalDays <= 30)
+        {
+            MensajesEventos.Add($"¡Atención! '{med.Nom_medicamento}' vencerá el {med.Fecha_vencimiento:dd/MM/yyyy}.");
+        }
+    }
+
+
+
 }
