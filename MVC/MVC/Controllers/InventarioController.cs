@@ -18,17 +18,15 @@ namespace MVC.Controllers
         {
             var inventario = _service.MostrarDisponibles();
 
-            // Verificación de eventos
-            if (_service is ServicioInventarioConcreto servicio)
-            {
-                servicio.InventarioInstancia.VerificarInventario();
+            // Ejecutar verificación de eventos
+            var inv = new InventarioConcreta(); // o la clase hija concreta si existe
+            inv.VerificarInventario();
 
-                // Pasa mensajes a la vista mediante ViewBag
-                ViewBag.Mensajes = servicio.InventarioInstancia.MensajesEventos;
-            }
+            ViewData["Mensajes"] = inv.MensajesEventos;
 
             return View(inventario);
         }
+
 
 
 

@@ -1,4 +1,6 @@
-﻿using BibliotecaFarmacia.Clases;
+﻿using System;
+using System.Collections.Generic;
+using BibliotecaFarmacia.Clases;
 using BibliotecaFarmacia.Eventos;
 
 public abstract class Inventario
@@ -11,46 +13,52 @@ public abstract class Inventario
 
     protected Inventario()
     {
-        notificacion_reorden.evento_existencias += EventHandler;
-        notificacion_vencimiento.evento_fecha += EventHandler;
+        try
+        {
+            notificacion_reorden.evento_existencias += EventHandler;
+            notificacion_vencimiento.evento_fecha += EventHandler;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al suscribirse a los eventos: {ex.Message}");
+        }
     }
 
     public void VerificarInventario()
     {
-        // Recalcular agrupación antes de emitir eventos
-        Farmacia.ConstruirInventarioAgrupado();
-
-        MensajesEventos.Clear();
-
-        notificacion_reorden.Informar_reorden(Inventario.l_inventario);
-
-        foreach (var med in l_inventario)
+        try
         {
-            notificacion_vencimiento.Informar_Vencimiento(med);
+            MensajesEventos.Clear();
+
+            foreach (var med in l_inventario)
+            {
+                notificacion_reorden.Informar_reorden(l_inventario);
+                notificacion_vencimiento.Informar_Vencimiento(med);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al verificar el inventario: {ex.Message}");
         }
     }
-
-
-
 
     public void EventHandler(Medicamento med)
     {
-        // Buscar cantidad directamente desde Farmacia.inventario
-        var entry = Farmacia.inventario.FirstOrDefault(x =>
-            x.medicamento.Nom_medicamento.ToLower() == med.Nom_medicamento.ToLower());
-
-        if (entry.cantidad <= 10)
+        try
         {
-            MensajesEventos.Add($"¡Advertencia! Solo hay {entry.cantidad} registros de '{med.Nom_medicamento}'.");
+            if (med.Cantidad <= 10)
+            {
+                MensajesEventos.Add($"¡Advertencia! El medicamento '{med.nom_medicamento}' tiene solo {med.Cantidad} unidades.");
+            }
+
+            if ((med.fecha_vencimiento - DateTime.Now).TotalDays <= 30)
+            {
+                MensajesEventos.Add($"¡Atención! El medicamento '{med.nom_medicamento}' vencerá el {med.fecha_vencimiento:dd/MM/yyyy}.");
+            }
         }
-
-        // Verifica vencimiento como antes
-        if ((med.Fecha_vencimiento - DateTime.Now).TotalDays <= 30)
+        catch (Exception ex)
         {
-            MensajesEventos.Add($"¡Atención! '{med.Nom_medicamento}' vencerá el {med.Fecha_vencimiento:dd/MM/yyyy}.");
+            Console.WriteLine($"Error al manejar el evento para el medicamento '{med?.nom_medicamento}': {ex.Message}");
         }
     }
-
-
-
 }

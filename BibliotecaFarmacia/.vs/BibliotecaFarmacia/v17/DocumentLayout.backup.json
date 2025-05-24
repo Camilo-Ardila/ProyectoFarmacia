@@ -1,89 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\",
+  "WorkspaceRootPath": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\eventos\\publisher_reorden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:eventos\\publisher_reorden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\farmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\farmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\inventarioconcreta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\inventarioconcreta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\eventos\\publisher_vencimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\eventos\\publisher_vencimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:eventos\\publisher_vencimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\m_pasta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\m_pasta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\eventos\\publisher_reorden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:eventos\\publisher_reorden.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\m_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\m_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\movimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\movimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\m_liquido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\m_liquido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\m_capsula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\m_capsula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\m_venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\m_venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\laboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\laboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\validacionesgenerales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\validacionesgenerales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\interfaces\\iaplicardescuento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:interfaces\\iaplicardescuento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\eventos\\publisher_pasar_a_ciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\eventos\\publisher_pasar_a_ciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:eventos\\publisher_pasar_a_ciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\eventos\\publisher_p_acumulados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\eventos\\publisher_p_acumulados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:eventos\\publisher_p_acumulados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\bibliotecafarmacia\\interfaces\\icalcularvalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\validacionesgenerales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\validacionesgenerales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\inventarioconcreta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\inventarioconcreta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\farmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\farmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\m_pasta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\m_pasta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\m_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\m_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\movimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\movimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\medicamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\m_liquido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\m_liquido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\m_capsula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\m_capsula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\m_venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\m_venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\laboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\laboratorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\clases\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:clases\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\interfaces\\iaplicardescuento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:interfaces\\iaplicardescuento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\bibliotecafarmacia\\interfaces\\icalcularvalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3F060E6-84C2-451D-BE5E-91CD1C05B0D7}|BibliotecaFarmacia.csproj|solutionrelative:interfaces\\icalcularvalor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -94,8 +94,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -115,47 +119,22 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "InventarioConcreta.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\InventarioConcreta.cs",
-              "RelativeDocumentMoniker": "Clases\\InventarioConcreta.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\InventarioConcreta.cs",
-              "RelativeToolTip": "Clases\\InventarioConcreta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Publisher_Pasar_A_Ciente.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Pasar_A_Ciente.cs",
+              "RelativeDocumentMoniker": "Eventos\\Publisher_Pasar_A_Ciente.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Pasar_A_Ciente.cs",
+              "RelativeToolTip": "Eventos\\Publisher_Pasar_A_Ciente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T23:56:44.386Z"
+              "WhenOpened": "2025-05-21T00:36:45.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "M_pasta.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_pasta.cs",
-              "RelativeDocumentMoniker": "Clases\\M_pasta.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_pasta.cs",
-              "RelativeToolTip": "Clases\\M_pasta.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T00:28:57.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Inventario.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Inventario.cs",
-              "RelativeDocumentMoniker": "Clases\\Inventario.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Inventario.cs",
-              "RelativeToolTip": "Clases\\Inventario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T00:27:15.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Publisher_Reorden.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Reorden.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Reorden.cs",
               "RelativeDocumentMoniker": "Eventos\\Publisher_Reorden.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Reorden.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Reorden.cs",
               "RelativeToolTip": "Eventos\\Publisher_Reorden.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -163,11 +142,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Publisher_Vencimiento.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Vencimiento.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Vencimiento.cs",
               "RelativeDocumentMoniker": "Eventos\\Publisher_Vencimiento.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Vencimiento.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Vencimiento.cs",
               "RelativeToolTip": "Eventos\\Publisher_Vencimiento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -175,23 +154,60 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Farmacia.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Farmacia.cs",
-              "RelativeDocumentMoniker": "Clases\\Farmacia.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Farmacia.cs",
-              "RelativeToolTip": "Clases\\Farmacia.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwCkAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Inventario.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Inventario.cs",
+              "RelativeDocumentMoniker": "Clases\\Inventario.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Inventario.cs",
+              "RelativeToolTip": "Clases\\Inventario.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBcAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T00:27:12.298Z"
+              "WhenOpened": "2025-05-21T00:27:15.606Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 4,
+              "Title": "Publisher_P_Acumulados.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_P_Acumulados.cs",
+              "RelativeDocumentMoniker": "Eventos\\Publisher_P_Acumulados.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_P_Acumulados.cs",
+              "RelativeToolTip": "Eventos\\Publisher_P_Acumulados.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T00:36:42.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ValidacionesGenerales.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\ValidacionesGenerales.cs",
+              "RelativeDocumentMoniker": "Clases\\ValidacionesGenerales.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\ValidacionesGenerales.cs",
+              "RelativeToolTip": "Clases\\ValidacionesGenerales.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T00:51:20.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InventarioConcreta.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\InventarioConcreta.cs",
+              "RelativeDocumentMoniker": "Clases\\InventarioConcreta.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\InventarioConcreta.cs",
+              "RelativeToolTip": "Clases\\InventarioConcreta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T23:56:44.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "M_capsula.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_capsula.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_capsula.cs",
               "RelativeDocumentMoniker": "Clases\\M_capsula.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_capsula.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_capsula.cs",
               "RelativeToolTip": "Clases\\M_capsula.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -200,10 +216,34 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Farmacia.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Farmacia.cs",
+              "RelativeDocumentMoniker": "Clases\\Farmacia.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Farmacia.cs",
+              "RelativeToolTip": "Clases\\Farmacia.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T00:27:12.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "M_pasta.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_pasta.cs",
+              "RelativeDocumentMoniker": "Clases\\M_pasta.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_pasta.cs",
+              "RelativeToolTip": "Clases\\M_pasta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T00:28:57.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Movimiento.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Movimiento.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Movimiento.cs",
               "RelativeDocumentMoniker": "Clases\\Movimiento.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Movimiento.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Movimiento.cs",
               "RelativeToolTip": "Clases\\Movimiento.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -211,11 +251,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "M_venta.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_venta.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_venta.cs",
               "RelativeDocumentMoniker": "Clases\\M_venta.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_venta.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_venta.cs",
               "RelativeToolTip": "Clases\\M_venta.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -223,11 +263,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "M_compra.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_compra.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_compra.cs",
               "RelativeDocumentMoniker": "Clases\\M_compra.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_compra.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_compra.cs",
               "RelativeToolTip": "Clases\\M_compra.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -235,11 +275,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Laboratorio.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Laboratorio.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Laboratorio.cs",
               "RelativeDocumentMoniker": "Clases\\Laboratorio.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Laboratorio.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Laboratorio.cs",
               "RelativeToolTip": "Clases\\Laboratorio.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAASwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -247,11 +287,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Medicamento.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
               "RelativeDocumentMoniker": "Clases\\Medicamento.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
               "RelativeToolTip": "Clases\\Medicamento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -259,11 +299,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "M_liquido.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
               "RelativeDocumentMoniker": "Clases\\M_liquido.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
               "RelativeToolTip": "Clases\\M_liquido.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowAkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -271,23 +311,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ValidacionesGenerales.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\ValidacionesGenerales.cs",
-              "RelativeDocumentMoniker": "Clases\\ValidacionesGenerales.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\ValidacionesGenerales.cs",
-              "RelativeToolTip": "Clases\\ValidacionesGenerales.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T00:51:20.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Usuario.cs",
               "RelativeDocumentMoniker": "Clases\\Usuario.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Usuario.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Usuario.cs",
               "RelativeToolTip": "Clases\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -295,11 +323,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "Persona.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
               "RelativeDocumentMoniker": "Clases\\Persona.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
               "RelativeToolTip": "Clases\\Persona.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAiwEwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -307,11 +335,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Cliente.cs",
               "RelativeDocumentMoniker": "Clases\\Cliente.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Cliente.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Cliente.cs",
               "RelativeToolTip": "Clases\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -319,11 +347,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "IAplicarDescuento.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Interfaces\\IAplicarDescuento.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Interfaces\\IAplicarDescuento.cs",
               "RelativeDocumentMoniker": "Interfaces\\IAplicarDescuento.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Interfaces\\IAplicarDescuento.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Interfaces\\IAplicarDescuento.cs",
               "RelativeToolTip": "Interfaces\\IAplicarDescuento.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -331,35 +359,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Publisher_Pasar_A_Ciente.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Pasar_A_Ciente.cs",
-              "RelativeDocumentMoniker": "Eventos\\Publisher_Pasar_A_Ciente.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_Pasar_A_Ciente.cs",
-              "RelativeToolTip": "Eventos\\Publisher_Pasar_A_Ciente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T00:36:45.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Publisher_P_Acumulados.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_P_Acumulados.cs",
-              "RelativeDocumentMoniker": "Eventos\\Publisher_P_Acumulados.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Eventos\\Publisher_P_Acumulados.cs",
-              "RelativeToolTip": "Eventos\\Publisher_P_Acumulados.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T00:36:42.689Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 20,
               "Title": "ICalcularValor.cs",
-              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Interfaces\\ICalcularValor.cs",
+              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Interfaces\\ICalcularValor.cs",
               "RelativeDocumentMoniker": "Interfaces\\ICalcularValor.cs",
-              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Interfaces\\ICalcularValor.cs",
+              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Interfaces\\ICalcularValor.cs",
               "RelativeToolTip": "Interfaces\\ICalcularValor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

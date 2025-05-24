@@ -13,25 +13,46 @@ namespace BibliotecaFarmacia.Clases
         public byte min_long = 7, max_long = 15;
         private uint total_gastado = 0;
 
-        // ✅ Constructor vacío requerido por ASP.NET Core
+        // Constructor vacío requerido por ASP.NET Core
         public Persona()
         {
         }
 
-        // ✅ Constructor adicional con parámetros (opcional)
+        // Constructor adicional con manejo de excepciones
         public Persona(string nombre_persona, string cc, string telefono_persona, uint total_gastado, string tipo)
         {
-            Nombre_persona = nombre_persona;
-            CC = cc;
-            Telefono_persona = telefono_persona;
-            Total_gastado = total_gastado;
-            Tipo = tipo;
+            try
+            {
+                Nombre_persona = nombre_persona;
+                CC = cc;
+                Telefono_persona = telefono_persona;
+                Total_gastado = total_gastado;
+                Tipo = tipo;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al construir Persona: " + ex.Message);
+                throw;
+            }
         }
 
         public string Nombre_persona
         {
             get => nombre_persona;
-            set => nombre_persona = value ?? throw new Exception("El nombre de la persona no puede estar vacío \n");
+            set
+            {
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(value))
+                        throw new Exception("El nombre de la persona no puede estar vacío.");
+                    nombre_persona = value.Trim();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error en Nombre_persona: " + ex.Message);
+                    throw;
+                }
+            }
         }
 
         public string Telefono_persona
@@ -39,14 +60,21 @@ namespace BibliotecaFarmacia.Clases
             get => telefono_persona;
             set
             {
-                if (value == null)
-                    throw new Exception(validaciones.Mensaje_vacio);
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(value))
+                        throw new Exception(validaciones.Mensaje_vacio);
 
-                if (value.Length < min_long || value.Length > max_long)
-                    throw new Exception("El teléfono debe tener entre 7 y 10 números \n");
+                    if (value.Length < min_long || value.Length > max_long)
+                        throw new Exception("El teléfono debe tener entre 7 y 10 números.");
 
-
-                telefono_persona = value;
+                    telefono_persona = value;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error en Telefono_persona: " + ex.Message);
+                    throw;
+                }
             }
         }
 
@@ -55,23 +83,53 @@ namespace BibliotecaFarmacia.Clases
             get => cc;
             set
             {
-                if (value == null)
-                    throw new Exception(validaciones.Mensaje_vacio);
+                try
+                {
+                    if (string.IsNullOrWhiteSpace(value))
+                        throw new Exception(validaciones.Mensaje_vacio);
 
-                cc = value;
+                    cc = value;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error en CC: " + ex.Message);
+                    throw;
+                }
             }
         }
 
         public uint Total_gastado
         {
             get => total_gastado;
-            set => total_gastado = value;
+            set
+            {
+                try
+                {
+                    total_gastado = value;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error en Total_gastado: " + ex.Message);
+                    throw;
+                }
+            }
         }
 
         public string Tipo
         {
             get => tipo;
-            set => tipo = value;
+            set
+            {
+                try
+                {
+                    tipo = value;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error en Tipo: " + ex.Message);
+                    throw;
+                }
+            }
         }
     }
 }

@@ -8,45 +8,70 @@ namespace BibliotecaFarmacia.Clases
         public Publisher_Pasar_A_Cliente notificacion_cliente;
 
         public Usuario(string nombre_persona, string cc, string telefono_persona, uint total_gastado = 0, string tipo = "usuario")
-    : base(nombre_persona, cc, telefono_persona, total_gastado, tipo)
+            : base(nombre_persona, cc, telefono_persona, total_gastado, tipo)
         {
+            try
+            {
+                // Aquí podrían ir inicializaciones adicionales si se requieren
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al crear Usuario: " + ex.Message);
+                throw;
+            }
         }
-
-
 
         // Método para suscribirse al evento
         public void Suscribirse(Publisher_Pasar_A_Cliente publisher)
         {
-            notificacion_cliente = publisher;
-            notificacion_cliente.evento_monto += EventHandler;
+            try
+            {
+                notificacion_cliente = publisher ?? throw new ArgumentNullException(nameof(publisher), "El publicador no puede ser nulo.");
+                notificacion_cliente.evento_monto += EventHandler;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al suscribirse al evento: " + ex.Message);
+                throw;
+            }
         }
+
         public void calcularptos(string cc, uint val_movimiento)
         {
-
-
-            // Buscar a la persona con la cédula dada
-            var persona = Farmacia.l_personas.Find(p => p.CC == cc);
-
-            // Verificar si existe y es un Cliente
-            if (persona is Usuario usuario)
+            try
             {
-                // Sumar el valor del movimiento al total gastado
-                usuario.Total_gastado += val_movimiento;
+                if (string.IsNullOrWhiteSpace(cc))
+                    throw new ArgumentException("La cédula no puede estar vacía.");
 
+                var persona = Farmacia.l_personas.Find(p => p.CC == cc);
 
-
-
+                if (persona is Usuario usuario)
+                {
+                    usuario.Total_gastado += val_movimiento;
+                }
+                else
+                {
+                    Console.WriteLine("No se encontró un cliente con esa cédula o no es un cliente.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                Console.WriteLine("No se encontró un cliente con esa cédula o no es un cliente.");
+                Console.WriteLine("Error en calcularptos: " + ex.Message);
+                throw;
             }
         }
 
         // Método manejador del evento
         public void EventHandler(uint total_gastado)
         {
-            Console.WriteLine($"¡Felicidades! Has gastado {total_gastado:C} y ahora puedes ser cliente.");
+            try
+            {
+                Console.WriteLine($"¡Felicidades! Has gastado {total_gastado:C} y ahora puedes ser cliente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error en el manejador de evento: " + ex.Message);
+            }
         }
     }
 }

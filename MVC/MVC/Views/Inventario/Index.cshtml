@@ -1,32 +1,22 @@
 ﻿@model List<BibliotecaFarmacia.Clases.Medicamento>
 
-@if (ViewBag.Mensajes != null)
+@if (ViewData["Mensajes"] is List<string> mensajes && mensajes.Any())
 {
-    foreach (string mensaje in ViewBag.Mensajes)
-    {
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            @mensaje
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        </div>
-    }
-}
-
-<div class="container mt-4">
-    <h2 class="mb-4 text-center">Inventario de Medicamentos</h2>
-    <div class="row mb-4">
-        <div class="col-md-6">
-            <form asp-action="Buscar" method="get" class="input-group">
-                <input type="text" name="nombre" class="form-control" placeholder="Buscar por nombre parcial..." />
-                <button type="submit" class="btn btn-primary">Buscar</button>
-            </form>
-        </div>
-        <div class="col-md-6">
-            <form asp-action="FiltrarPorTipo" method="get" class="input-group">
-                <input type="text" name="tipo" class="form-control" placeholder="Filtrar por tipo..." />
-                <button type="submit" class="btn btn-secondary">Filtrar</button>
-            </form>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="toastContainer">
+            @foreach (var msg in mensajes)
+            {
+                <div class="toast show align-items-center text-bg-warning border-0 mb-2" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex">
+                        <div class="toast-body">@msg</div>
+                        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                </div>
+            }
         </div>
     </div>
+}
+
 
     @if (Model != null && Model.Count > 0)
     {

@@ -15,21 +15,88 @@ namespace BibliotecaFarmacia.Clases
 
         public Movimiento(Medicamento medicamento, ulong valor_movimiento, uint cantidad_medicamentos)
         {
-            Valor_movimiento = valor_movimiento;
-            Cantidad_medicamentos = cantidad_medicamentos;
-            Medicamento_objeto = medicamento;
-            Fecha_creacion = DateTime.Now;
+            try
+            {
+                Valor_movimiento = valor_movimiento;
+                Cantidad_medicamentos = cantidad_medicamentos;
+                Medicamento_objeto = medicamento ?? throw new ArgumentNullException(nameof(medicamento), "El objeto medicamento no puede ser nulo.");
+                Fecha_creacion = DateTime.Now;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al construir Movimiento: " + ex.Message);
+                throw;
+            }
         }
 
-        public ulong Valor_movimiento { get => valor_movimiento; set => valor_movimiento = value; }
-        public uint Cantidad_medicamentos { get => cantidad_medicamentos; set => cantidad_medicamentos = value; }
-        public Medicamento Medicamento_objeto { get; set;}
-        public DateTime Fecha_creacion { get => fecha; set => fecha = value; }
+        public ulong Valor_movimiento
+        {
+            get => valor_movimiento;
+            set
+            {
+                try
+                {
+                    valor_movimiento = value; // Aquí podrías agregar validaciones si lo deseas
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error al asignar Valor_movimiento: " + ex.Message);
+                    throw;
+                }
+            }
+        }
+
+        public uint Cantidad_medicamentos
+        {
+            get => cantidad_medicamentos;
+            set
+            {
+                try
+                {
+                    cantidad_medicamentos = value; // Puedes validar si se requiere ser mayor que 0
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error al asignar Cantidad_medicamentos: " + ex.Message);
+                    throw;
+                }
+            }
+        }
+
+        public Medicamento Medicamento_objeto
+        {
+            get; set;
+        }
+
+        public DateTime Fecha_creacion
+        {
+            get => fecha;
+            set
+            {
+                try
+                {
+                    fecha = value;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error al asignar Fecha_creacion: " + ex.Message);
+                    throw;
+                }
+            }
+        }
 
         // Método de la interfaz
         public virtual ulong Valor_Total()
         {
-            return valor_movimiento * cantidad_medicamentos;
+            try
+            {
+                return valor_movimiento * cantidad_medicamentos;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al calcular Valor_Total: " + ex.Message);
+                throw;
+            }
         }
     }
 }

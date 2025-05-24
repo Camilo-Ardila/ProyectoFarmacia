@@ -10,12 +10,21 @@ namespace BibliotecaFarmacia.Eventos
 
         public void Informar_P_Acumulados(uint ptos)
         {
-            if (evento_ptos != null)
+            try
             {
-                evento_ptos(ptos);
+                if (evento_ptos != null)
+                {
+                    evento_ptos(ptos);
+                }
+                else
+                {
+                    Console.WriteLine("No hay suscriptores al evento de puntos acumulados.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al notificar puntos acumulados: " + ex.Message);
             }
         }
     }
 }
-
-

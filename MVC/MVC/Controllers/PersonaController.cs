@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BibliotecaFarmacia.Clases;
 using MVC.Services;
+using BibliotecaFarmacia.Eventos;
 
 namespace MVC.Controllers
 {
@@ -41,19 +42,27 @@ namespace MVC.Controllers
             return View("Index", resultado);
         }
 
-        [HttpGet]
-        public IActionResult CrearUsuario()
-        {
-            return View();
-        }
         [HttpPost]
         public IActionResult CrearUsuario(string CC, string Nombre_persona, string Telefono_persona)
         {
-            Usuario nuevo = new Usuario(CC, Nombre_persona, Telefono_persona);
-            service.CrearUsuario(nuevo); // <- Faltaba esta línea
+            Usuario nuevo = new Usuario(Nombre_persona, CC, Telefono_persona);
+
+            // Evento: suscribirse y lanzar la notificación si aplica
+            var publisher = new Publisher_Pasar_A_Cliente();
+            nuevo.Suscribirse(publisher);
+            service.CrearUsuario(nuevo);
+
+            // Simular gasto
+            nuevo.calcularptos(CC, 1500000); // Esto aumentará Total_gastado
+
+            // Informar si aplica
+            publisher.Informar_Cambio_A_Cliente(nuevo.Total_gastado);
+
             TempData["Success"] = "Usuario creado exitosamente.";
+
             return RedirectToAction("Index");
         }
+
 
 
 
