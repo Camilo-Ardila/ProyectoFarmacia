@@ -1,5 +1,5 @@
 ﻿@using BibliotecaFarmacia.Clases
-@model List<(Medicamento medicamento, uint cantidad)>
+@model List<(Medicamento medicamento, M_venta venta)>
 
 @{
     ViewData["Title"] = "Carrito de Compras";
@@ -29,23 +29,21 @@
             </thead>
             <tbody>
                 @{
-                    decimal total = 0;
+                    ulong total = 0;
                     foreach (var item in Model)
                     {
-                        var m = item.medicamento;
-                        var cantidad = item.cantidad;
-                        var subTotal = m.Precio_compra * cantidad;
+                        var subTotal = item.medicamento.Precio_venta * item.venta.Cantidad_medicamentos;
                         total += subTotal;
                         <tr>
-                            <td>@m.Nom_medicamento</td>
-                            <td>@m.Tipo_med</td>
-                            <td>@m.Laboratorio</td>
-                            <td>$@m.Precio_compra</td>
-                            <td>@cantidad</td>
+                            <td>@item.medicamento.Nom_medicamento</td>
+                            <td>@item.medicamento.Tipo_med</td>
+                            <td>@item.medicamento.Laboratorio</td>
+                            <td>$@item.medicamento.Precio_venta</td>
+                            <td>@item.venta.Cantidad_medicamentos</td>
                             <td>$@subTotal</td>
                             <td>
                                 <form asp-action="EliminarDelCarrito" method="post">
-                                    <input type="hidden" name="nombre" value="@m.Nom_medicamento" />
+                                    <input type="hidden" name="nom_medicamento" value="@item.medicamento.Nom_medicamento" />
                                     <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
                                 </form>
                             </td>
@@ -59,7 +57,7 @@
 
         <div class="d-flex justify-content-between mt-4">
             <a asp-action="Index" class="btn btn-outline-secondary">Seguir Comprando</a>
-            <form asp-action="ComprarCarrito" method="post">
+            <form asp-action="Comprar" method="post">
                 <button type="submit" class="btn btn-success">Finalizar Compra</button>
             </form>
         </div>

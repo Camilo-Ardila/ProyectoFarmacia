@@ -1,29 +1,55 @@
 ﻿@using BibliotecaFarmacia.Clases
-@model List<(Medicamento medicamento, uint cantidad)>
+@model List<(Medicamento, uint)>
 
 @{
-    ViewData["Title"] = "Módulo de Compras";
+    ViewData["Title"] = "Venta de Medicamentos";
+    var ccActual = ViewBag.CC as string;
+    var descuentoEstado = TempData["DescuentoEstado"] as string;
+    var color = TempData["Color"] as string;
+    var mensaje = TempData["Mensaje"] as string;
 }
 
 <div class="container mt-4">
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <a asp-action="MostrarCarrito" class="btn btn-primary">🛒 Ver Carrito</a>
-        <h2 class="text-center flex-grow-1">Módulo de Compras</h2>
+        <a asp-action="Carrito" class="btn btn-primary">🛒 Ver Carrito</a>
+        <h2 class="text-center flex-grow-1">Venta de Medicamentos</h2>
     </div>
 
-    @if (TempData["Success"] != null)
+    @if (!string.IsNullOrEmpty(mensaje))
     {
-        <div class="alert alert-success">@TempData["Success"]</div>
+        <div class="alert alert-info">@mensaje</div>
     }
 
-    <form class="d-flex gap-2 mb-3" method="get" asp-action="BuscarPorNombre">
-        <input name="nombre" class="form-control" placeholder="Buscar por nombre..." />
+    <form method="post" asp-action="BuscarPersona" class="d-flex gap-2 mb-3">
+        <input name="cc" class="form-control" placeholder="Buscar persona por cédula..." required />
+        <button type="submit" class="btn btn-dark">Buscar Persona</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(ccActual))
+    {
+        <div class="alert alert-success">
+            Cliente actual: <strong>@ccActual</strong>
+        </div>
+    }
+
+    <form method="post" asp-action="BuscarPorNombre" class="d-flex gap-2 mb-2">
+        <input name="nombreParcial" class="form-control" placeholder="Buscar por nombre..." />
         <button type="submit" class="btn btn-primary">Buscar</button>
     </form>
 
-    <form class="d-flex gap-2 mb-3" method="get" asp-action="BuscarPorTipo">
-        <input name="tipo" class="form-control" placeholder="Buscar por tipo..." />
+    <form method="post" asp-action="BuscarPorTipo" class="d-flex gap-2 mb-3">
+        <input name="tipoParcial" class="form-control" placeholder="Buscar por tipo..." />
         <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+
+    <form method="post" asp-action="ToggleDescuento" class="mb-3">
+        <button type="submit" class="btn btn-warning">
+            Activar/Desactivar descuento
+        </button>
+        @if (!string.IsNullOrEmpty(descuentoEstado))
+        {
+            <span class="ms-3 fw-bold" style="color:@color">Estado: @descuentoEstado</span>
+        }
     </form>
 
     <table class="table table-striped table-bordered">
@@ -31,26 +57,30 @@
             <tr>
                 <th>Nombre</th>
                 <th>Tipo</th>
-                <th>Laboratorio</th>
                 <th>Precio</th>
+                <th>Laboratorio</th>
                 <th>Vencimiento</th>
-                <th>Agregar al carrito</th>
+                <th>Stock</th>
+                <th>Agregar</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var item in Model)
             {
-                var m = item.medicamento;
+                var med = item.Item1;
+                var stock = item.Item2;
+
                 <tr>
-                    <td>@m.Nom_medicamento</td>
-                    <td>@m.Tipo_med</td>
-                    <td>@m.Laboratorio</td>
-                    <td>$@m.Precio_compra</td>
-                    <td>@m.Fecha_vencimiento.ToShortDateString()</td>
+                    <td>@med.Nom_medicamento</td>
+                    <td>@med.Tipo_med</td>
+                    <td>$@med.Precio_venta</td>
+                    <td>@med.Laboratorio</td>
+                    <td>@med.Fecha_vencimiento.ToShortDateString()</td>
+                    <td>@stock</td>
                     <td>
-                        <form asp-action="AgregarAlCarrito" method="post" class="d-flex gap-2 align-items-center">
-                            <input type="hidden" name="nombre" value="@m.Nom_medicamento" />
-                            <input type="number" name="cantidad" min="1" value="1" class="form-control form-control-sm w-50" required />
+                        <form method="post" asp-action="AgregarAlCarrito" class="d-flex gap-2 align-items-center">
+                            <input type="hidden" name="nom_medicamento" value="@med.Nom_medicamento" />
+                            <input type="number" name="cantidad" min="1" max="@stock" class="form-control form-control-sm w-50" required />
                             <button type="submit" class="btn btn-sm btn-outline-success">Agregar</button>
                         </form>
                     </td>

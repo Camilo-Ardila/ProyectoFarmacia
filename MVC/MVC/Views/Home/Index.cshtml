@@ -2,26 +2,82 @@
     ViewData["Title"] = "Inicio - Farmacia";
 }
 
-<div class="text-center mt-4">
-    <h1 class="display-4">Sistema de Gestión de Farmacia</h1>
-    <p class="lead">Accede a los módulos principales del sistema.</p>
+<div class="pharmacy-background min-vh-100 d-flex align-items-center">
+    <div class="container py-5">
+        <div class="text-center mb-5 text-black">
+            <h1 class="display-5 fw-bold">Sistema de Gestión de Farmacia</h1>
+            <p class="fs-5">Accede fácilmente a los módulos principales del sistema.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <div class="col">
+                <a asp-controller="M_Compra" asp-action="Index" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm border-0 hover-shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-primary">Módulo de Compras</h5>
+                            <p class="card-text text-muted">Gestiona la adquisición de productos.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a asp-controller="Inventario" asp-action="Index" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm border-0 hover-shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-success">Módulo de Inventario</h5>
+                            <p class="card-text text-muted">Consulta y actualiza el stock disponible.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a asp-controller="Persona" asp-action="Index" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm border-0 hover-shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-info">Módulo de Personas</h5>
+                            <p class="card-text text-muted">Administra clientes y proveedores.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a asp-controller="M_Venta" asp-action="Index" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm border-0 hover-shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-danger">Módulo de Ventas</h5>
+                            <p class="card-text text-muted">Registra y consulta ventas realizadas.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a asp-controller="Archivo" asp-action="Index" class="text-decoration-none">
+                    <div class="card h-100 shadow-sm border-0 hover-shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-danger">Archivo</h5>
+                            <p class="card-text text-muted">Consulta o gestiona documentos del sistema.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="mt-5 d-flex justify-content-center gap-4 flex-wrap">
-    <a asp-controller="M_Compra" asp-action="Index" class="btn btn-outline-primary btn-lg">
-        Módulo de Compras
-    </a>
-    <a asp-controller="Inventario" asp-action="Index" class="btn btn-outline-success btn-lg">
-        Módulo de Inventario
-    </a>
-    <a asp-controller="Persona" asp-action="Index" class="btn btn-outline-info btn-lg">
-        Módulo de Personas
-    </a>
-    <a asp-controller="M_Venta" asp-action="Index" class="btn btn-outline-danger btn-lg">
-        Módulo de Ventas
-    </a>
+<style>
+    .pharmacy-background {
+        background-color: #f8f9fa;
+    }
 
-    <a asp-controller="Archivo" asp-action="Index" class="btn btn-outline-danger btn-lg">
-        Archivo
-    </a>
-</div>
+    .hover-shadow:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        transition: transform 0.2s ease-in-out;
+    }
+</style>
