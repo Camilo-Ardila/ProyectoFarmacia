@@ -5,6 +5,6 @@ namespace BibliotecaFarmacia.Interfaces
     public interface IAplicarDescuento
     {
 
-        public void AplicarDescuento(Medicamento medicamento, string tipo);
+        public int AplicarDescuento(Medicamento medicamento, M_venta venta);
     }
 }

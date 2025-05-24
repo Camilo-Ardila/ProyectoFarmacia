@@ -1,10 +1,13 @@
 ﻿using BibliotecaFarmacia.Clases;
+using BibliotecaFarmacia.Interfaces;
 
 namespace MVC.Services
 {
     public class M_VentaService
     {
-        public List<(Medicamento medicamento, uint cantidad)> carrito = new List<(Medicamento medicamento, uint cantidad)>();
+        bool descuento = false;
+
+        public List<(Medicamento medicamento, M_venta venta)> carrito = new List<(Medicamento medicamento, M_venta venta)>();
         public List<(Medicamento, uint)> MostrarDisponibles()
         {
             Farmacia.ConstruirInventarioAgrupado();
@@ -12,112 +15,98 @@ namespace MVC.Services
             return Farmacia.inventario;
         }
 
-        public List<Medicamento> ListarTipo(string tipo_med)
+        public bool ToggleDescuento()
         {
-            return Inventario.l_inventario
-                .Where(p => p.Tipo_med.ToLower() == tipo_med.ToLower())
-                .ToList();
-        }
-        public List<Medicamento> BuscarPorMedicamento(string nombreParcial)
-        {
-            var medicamentosEncontrados = Inventario.l_inventario
-                .Where(p => p.nom_medicamento.ToLower().Contains(nombreParcial.ToLower()))
-                .ToList();
-
-            return medicamentosEncontrados;
+            descuento = !descuento;
+            return descuento;
         }
 
-        public void AgregarAlCarrito(Medicamento medicamento, uint cantidad)
+        public List<(Medicamento, uint)> ListarTipo(string tipo_med)
         {
-            if (cantidad == 0)
+            return Farmacia.inventario
+                .Where(p => p.Item1.Tipo_med.ToLower() == tipo_med.ToLower())
+                .ToList();
+        }
+
+        public List<(Medicamento, uint)> BuscarPorMedicamento(string nombreParcial)
+        {
+            return Farmacia.inventario
+                .Where(p => p.Item1.Nom_medicamento.ToLower().Contains(nombreParcial.ToLower()))
+                .ToList();
+        }
+
+        public void AgregarAlCarrito(Medicamento medicamento, M_venta venta)
+        {
+            if (venta.Cantidad_medicamentos == 0)
             {
                 Console.WriteLine("No se puede agregar una cantidad cero al carrito.");
                 return;
             }
 
-            carrito.Add((medicamento, cantidad));
-            Console.WriteLine($"{cantidad} unidades de '{medicamento.nom_medicamento}' agregadas al carrito.");
+            carrito.Add((medicamento, venta));
+            Console.WriteLine($"{venta.cantidad_medicamentos} unidades de '{medicamento.nom_medicamento}' agregadas al carrito.");
         }
 
-        public bool Vender_Medicamento(string nom_medicamento, int cantidadSolicitada, string cc)
+        public bool Vender_Medicamento(Medicamento medicamento, M_venta venta)
         {
-            // Buscar a la persona en la lista de personas
-            var persona = Farmacia.l_personas.FirstOrDefault(p => p.cc == cc);
+            var persona = Farmacia.l_personas.FirstOrDefault(p => p.CC == venta.CC);
 
             if (persona == null)
                 return false; // No se encontró la persona
 
-            // Buscar los medicamentos por nombre y ordenarlos por fecha de vencimiento
             var medicamentos = Inventario.l_inventario
-                .Where(p => p.nom_medicamento.ToLower() == nom_medicamento.ToLower())
-                .OrderBy(p => p.fecha_vencimiento)
+                .Where(m => m.Nom_medicamento.ToLower() == medicamento.Nom_medicamento.ToLower())
+                .OrderBy(m => m.Fecha_vencimiento)
                 .ToList();
 
-            int cantidadVendida = 0;
-            ulong valorTotal = 0;
-            Medicamento medicamentoReferencia = null;
+            int cantidadDisponible = medicamentos.Count;
 
-            foreach (var med in medicamentos.ToList()) // .ToList() para evitar modificación de colección durante iteración
+            if (venta.Cantidad_medicamentos > cantidadDisponible)
+                return false; // No hay suficientes medicamentos
+
+            // Vender medicamentos: eliminar la cantidad solicitada del inventario
+            for (int i = 0; i < venta.Cantidad_medicamentos; i++)
             {
-                if (cantidadVendida >= cantidadSolicitada)
-                    break;
-
-                int unidadesRestantes = cantidadSolicitada - cantidadVendida;
-
-                if (med.Cantidad <= unidadesRestantes)
-                {
-                    cantidadVendida += med.Cantidad;
-                    valorTotal += (ulong)(med.Cantidad * med.Precio_venta);
-                    Inventario.l_inventario.Remove(med);
-
-                    if (medicamentoReferencia == null)
-                        medicamentoReferencia = med;
-                }
-                else
-                {
-                    med.Cantidad -= (ushort)unidadesRestantes;
-                    cantidadVendida += unidadesRestantes;
-                    valorTotal += (ulong)(unidadesRestantes * med.Precio_venta);
-
-                    if (medicamentoReferencia == null)
-                        medicamentoReferencia = med;
-                }
+                Inventario.l_inventario.Remove(medicamentos[i]);
             }
 
-            if (cantidadVendida > 0 && medicamentoReferencia != null)
-            {
-                // Actualizar el total gastado de la persona
-                persona.Total_gastado += (uint)valorTotal;
+            if(descuento == true)
+                venta.Valor_movimiento = (ulong)venta.AplicarDescuento(medicamento, venta);
 
-                // Crear y registrar la venta
-                var venta = new M_venta(medicamentoReferencia, valorTotal, (uint)cantidadVendida, cc);
-                Farmacia.l_ventas.Add(venta);
-                return true;
+            persona.Total_gastado += (uint)(venta.Valor_movimiento);
+
+            // Si es cliente, actualizar los puntos acumulados
+            if (persona is Cliente cliente)
+            {
+                cliente.Ptos = cliente.Total_gastado / 100;
             }
 
-            return false; // No se pudo vender
+            Farmacia.l_ventas.Add(venta);
+
+            return true;
         }
 
-        public void CarritoCompras(string cc)
+        public void CarritoCompras()
         {
+            string nombre;
+            int cantidad;
+
             foreach (var item in carrito)
             {
-                string nombre = item.medicamento.nom_medicamento;
-                int cantidad = (int)item.cantidad;
+               nombre = item.medicamento.nom_medicamento;
+               cantidad = (int)item.venta.Cantidad_medicamentos;   
 
-                bool ventaExitosa = Vender_Medicamento(nombre, cantidad, cc);
-
-                if (!ventaExitosa)
-                {
-                    Console.WriteLine($"No se pudo vender {cantidad} unidades de {nombre} a la persona con cédula {cc}.");
-                }
-                else
-                {
-                    Console.WriteLine($"Venta exitosa: {cantidad} unidades de {nombre}.");
-                }
+                Vender_Medicamento(item.medicamento, item.venta);
+             
             }
 
             carrito.Clear(); // Limpiar después de procesar
+        }
+
+        public List<(Medicamento, M_venta)> MostrarCarrito()
+        {
+
+            return carrito;
         }
 
 

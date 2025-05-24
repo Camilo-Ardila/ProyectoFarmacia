@@ -17,9 +17,9 @@ namespace BibliotecaFarmacia.Clases
         {
             CC = cc;
         }
-        public float descuento = 0.01f;
+        public float descuento = 0.02f;
 
-        public override ulong Valor_Total()
+        public override ulong Valor_Total() 
         {
             ulong total = 0;
 
@@ -32,10 +32,15 @@ namespace BibliotecaFarmacia.Clases
             return total;
         }
 
-        public void AplicarDescuento(Medicamento medicamento, string tipo)
+        public int AplicarDescuento(Medicamento medicamento, M_venta venta)
         {
 
-            if (tipo == "cliente")
+            int precio_descuento = 0;
+            float descuento = 0.02f;
+
+            var persona = Farmacia.l_personas.FirstOrDefault(p => p.CC == venta.CC);
+
+            if (persona.Tipo == "cliente")
             {
                 // Descuento base para clientes
                 descuento += 0.03f;
@@ -59,8 +64,12 @@ namespace BibliotecaFarmacia.Clases
             else
             {
                 // Descuento para usuarios (no clientes)
-                descuento = 0.01f;
+                descuento = 0.02f;
             }
+
+            precio_descuento = (int)(venta.Valor_movimiento - (float)(venta.Valor_movimiento * descuento));
+
+            return precio_descuento;
         }
 
         public string CC { get; set; }
