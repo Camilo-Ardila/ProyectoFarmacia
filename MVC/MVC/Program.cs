@@ -42,6 +42,8 @@ namespace MVC
 
             // CARGA DE DATOS INICIALES
 
+            Farmacia.l_personas.Add(new Usuario("Camilo", "1033259458", "3122787001"));
+
             DateTime vencimientoProximo = DateTime.Now.AddDays(100);
 
             Farmacia.l_disponibles.Add(new M_capsula("Paracetamol", "Genfar", (DateTime.Now), 300, 100, 500, "gel"));

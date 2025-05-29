@@ -16,7 +16,6 @@ namespace MVC.Controllers
         public IActionResult Index()
         {
             var inventario = ventaService.MostrarDisponibles();
-            ViewBag.CC = ventaService.CedulaActual;
             return View(inventario);
         }
 
@@ -33,7 +32,6 @@ namespace MVC.Controllers
         public IActionResult BuscarPorNombre(string nombreParcial)
         {
             var resultados = ventaService.BuscarPorMedicamento(nombreParcial);
-            ViewBag.CC = ventaService.CedulaActual;
             return View("Index", resultados);
         }
 
@@ -41,14 +39,13 @@ namespace MVC.Controllers
         public IActionResult BuscarPorTipo(string tipoParcial)
         {
             var resultados = ventaService.BuscarPorTipo(tipoParcial);
-            ViewBag.CC = ventaService.CedulaActual;
             return View("Index", resultados);
         }
 
         [HttpPost]
         public IActionResult BuscarPersona(string cc)
         {
-            ventaService.BuscarPorCC(cc);
+            ventaService.AsignarCC(cc);
             TempData["Mensaje"] = "Cédula registrada. Si existe, se usará en las operaciones.";
             return RedirectToAction("Index");
         }
@@ -56,7 +53,7 @@ namespace MVC.Controllers
         [HttpPost]
         public IActionResult AgregarAlCarrito(string nom_medicamento, uint cantidad)
         {
-            var cc = ventaService.CedulaActual;
+            var cc = ventaService.cedulaActual;
 
             if (string.IsNullOrEmpty(cc))
             {
@@ -78,12 +75,12 @@ namespace MVC.Controllers
             var venta = new M_venta(medicamento, valor, cantidad, cc);
 
             ventaService.AgregarAlCarrito(medicamento, venta);
+            TempData["Success"] = $"{venta.Medicamento_objeto.Nom_medicamento} agregado al carrito exitosamente.";
             return RedirectToAction("Index");
         }
 
         public IActionResult Carrito()
         {
-            var carrito = ventaService.MostrarCarrito();
             return View(carrito);
         }
 

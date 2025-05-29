@@ -8,7 +8,7 @@ namespace MVC.Services
         private bool descuento = false;
 
         // NUEVO: Atributo para guardar la cédula actual
-        public string CedulaActual { get; private set; } = "";
+        public string cedulaActual = "";
 
         public List<(Medicamento medicamento, M_venta venta)> carrito = new List<(Medicamento medicamento, M_venta venta)>();
 
@@ -39,7 +39,7 @@ namespace MVC.Services
         }
 
         // NUEVO: Guardar la cédula ingresada
-        public void BuscarPorCC(string cc)
+        public void AsignarCC(string cc)
         {
             if (string.IsNullOrWhiteSpace(cc))
             {
@@ -47,7 +47,12 @@ namespace MVC.Services
                 return;
             }
 
-            CedulaActual = cc.Trim();
+            if (!cc.All(char.IsDigit)){
+                Console.WriteLine("Todo el campo debe ser números ");
+            }
+
+            else
+                cedulaActual = cc.Trim();
         }
 
         public void AgregarAlCarrito(Medicamento medicamento, M_venta venta)
@@ -61,23 +66,29 @@ namespace MVC.Services
             carrito.Add((medicamento, venta));
         }
 
-        public bool Vender_Medicamento(Medicamento medicamento, M_venta venta)
+        public void Vender_Medicamento(Medicamento medicamento, M_venta venta)
         {
             var persona = Farmacia.l_personas.FirstOrDefault(p => p.CC == venta.CC);
-            if (persona == null) return false;
+
+            if (persona == null) return;
 
             var medicamentos = Inventario.l_inventario
                 .Where(m => m.Nom_medicamento.ToLower() == medicamento.Nom_medicamento.ToLower())
                 .OrderBy(m => m.Fecha_vencimiento)
                 .ToList();
 
-            if (venta.Cantidad_medicamentos > medicamentos.Count) return false;
+            if (venta.Cantidad_medicamentos > medicamentos.Count) return;
 
             for (int i = 0; i < venta.Cantidad_medicamentos; i++)
+            {
                 Inventario.l_inventario.Remove(medicamentos[i]);
+            }
 
             if (descuento)
+            {
                 venta.Valor_movimiento = (ulong)venta.AplicarDescuento(medicamento, venta);
+            }
+
 
             persona.Total_gastado += (uint)venta.Valor_movimiento;
 
@@ -85,7 +96,7 @@ namespace MVC.Services
                 cliente.Ptos = cliente.Total_gastado / 100;
 
             Farmacia.l_ventas.Add(venta);
-            return true;
+           
         }
 
         public void CarritoCompras()
@@ -98,6 +109,7 @@ namespace MVC.Services
             Console.WriteLine("Ventas Realizadas");
 
             carrito.Clear();
+            cedulaActual = "";
         }
 
         public List<(Medicamento, M_venta)> MostrarCarrito() => carrito;

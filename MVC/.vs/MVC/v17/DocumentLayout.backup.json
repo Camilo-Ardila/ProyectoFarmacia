@@ -1,113 +1,117 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\",
+  "WorkspaceRootPath": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\persona\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\persona\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\m_venta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\m_venta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\m_venta\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\m_venta\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\m_compra\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\m_compra\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\m_compra\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\m_compra\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\m_ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\m_ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\m_ventacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\m_ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\m_ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\m_ventaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\m_compraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\m_compraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\servicioinventarioconcreto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\servicioinventarioconcreto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\inventarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\inventarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\m_compracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\m_compracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\m_compracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\archivoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\personaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\personaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\persona\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\persona\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\m_venta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\m_venta\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\m_venta\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\m_venta\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\m_compra\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\m_compra\\carrito.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\m_compra\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\m_compra\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\m_compraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\m_compraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\servicioinventarioconcreto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\servicioinventarioconcreto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\inventarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\inventarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\services\\archivoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\services\\archivoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\david\\desktop\\proyectofarmacia\\mvc\\mvc\\interfaces\\ipersonaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|c:\\users\\camil\\desktop\\proyectofarmacia\\mvc\\mvc\\interfaces\\ipersonaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEEA8949-6D99-4C39-A1C7-47D9C7CF37BA}|MVC\\MVC.csproj|solutionrelative:mvc\\interfaces\\ipersonaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -136,12 +140,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
@@ -161,10 +161,35 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Persona\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Persona\\Index.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Persona\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Persona\\Index.cshtml",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAqwH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T23:36:18.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T23:34:00.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Carrito.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Compra\\Carrito.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Compra\\Carrito.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\M_Compra\\Carrito.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Compra\\Carrito.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Compra\\Carrito.cshtml",
               "RelativeToolTip": "MVC\\Views\\M_Compra\\Carrito.cshtml",
               "ViewState": "AgIAACwAAAAAAAAAAADwv0EAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -172,47 +197,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Compra\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC\\Views\\M_Compra\\Index.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Compra\\Index.cshtml",
-              "RelativeToolTip": "MVC\\Views\\M_Compra\\Index.cshtml",
-              "ViewState": "AgIAACYAAAAAAAAAAADwvzsAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T23:37:03.185Z"
+              "DocumentIndex": 1,
+              "Title": "M_VentaService.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_VentaService.cs",
+              "RelativeDocumentMoniker": "MVC\\Services\\M_VentaService.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_VentaService.cs",
+              "RelativeToolTip": "MVC\\Services\\M_VentaService.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwBEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T01:18:56.098Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InventarioController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\InventarioController.cs",
-              "RelativeDocumentMoniker": "MVC\\Controllers\\InventarioController.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\InventarioController.cs",
-              "RelativeToolTip": "MVC\\Controllers\\InventarioController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "M_VentaController.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\M_VentaController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\M_VentaController.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\M_VentaController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\M_VentaController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAADwv1IAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T21:12:23.197Z"
+              "WhenOpened": "2025-05-23T20:47:39.274Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Inventario\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC\\Views\\Inventario\\Index.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Inventario\\Index.cshtml",
-              "RelativeToolTip": "MVC\\Views\\Inventario\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T23:36:39.663Z"
+              "Title": "M_CompraController.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\M_CompraController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\M_CompraController.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\M_CompraController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\M_CompraController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAADwv1wAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T22:29:59.359Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "PersonaController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\PersonaController.cs",
               "RelativeDocumentMoniker": "MVC\\Controllers\\PersonaController.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\PersonaController.cs",
               "RelativeToolTip": "MVC\\Controllers\\PersonaController.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAowEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -220,24 +248,73 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Persona\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC\\Views\\Persona\\Index.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Persona\\Index.cshtml",
-              "RelativeToolTip": "MVC\\Views\\Persona\\Index.cshtml",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAqwH0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T23:36:18.221Z",
+              "DocumentIndex": 3,
+              "Title": "PersonaService.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\PersonaService.cs",
+              "RelativeDocumentMoniker": "MVC\\Services\\PersonaService.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\PersonaService.cs",
+              "RelativeToolTip": "MVC\\Services\\PersonaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:39:51.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Inventario\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Inventario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Inventario\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Inventario\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T23:36:39.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Program.cs",
+              "RelativeDocumentMoniker": "MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Program.cs",
+              "RelativeToolTip": "MVC\\Program.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T08:32:35.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InventarioController.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\InventarioController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\InventarioController.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\InventarioController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\InventarioController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T21:12:23.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Compra\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\M_Compra\\Index.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Compra\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\M_Compra\\Index.cshtml",
+              "ViewState": "AgIAACYAAAAAAAAAAADwvzsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-22T23:37:03.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "M_CompraService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_CompraService.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_CompraService.cs",
               "RelativeDocumentMoniker": "MVC\\Services\\M_CompraService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_CompraService.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_CompraService.cs",
               "RelativeToolTip": "MVC\\Services\\M_CompraService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -245,11 +322,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Venta\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Venta\\Index.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\M_Venta\\Index.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Venta\\Index.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Venta\\Index.cshtml",
               "RelativeToolTip": "MVC\\Views\\M_Venta\\Index.cshtml",
               "ViewState": "AgIAACgAAAAAAAAAAADwvz0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -258,34 +335,10 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Program.cs",
-              "RelativeDocumentMoniker": "MVC\\Program.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Program.cs",
-              "RelativeToolTip": "MVC\\Program.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwC8AAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T08:32:35.665Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MVC\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-22T23:34:00.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Carrito.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Venta\\Carrito.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Venta\\Carrito.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\M_Venta\\Carrito.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Venta\\Carrito.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\M_Venta\\Carrito.cshtml",
               "RelativeToolTip": "MVC\\Views\\M_Venta\\Carrito.cshtml",
               "ViewState": "AgIAAB8AAAAAAAAAAAAcwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -293,35 +346,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "M_VentaController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\M_VentaController.cs",
-              "RelativeDocumentMoniker": "MVC\\Controllers\\M_VentaController.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\M_VentaController.cs",
-              "RelativeToolTip": "MVC\\Controllers\\M_VentaController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAqwHAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T20:47:39.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "M_VentaService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_VentaService.cs",
-              "RelativeDocumentMoniker": "MVC\\Services\\M_VentaService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\M_VentaService.cs",
-              "RelativeToolTip": "MVC\\Services\\M_VentaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T01:18:56.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "MVC\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Properties\\launchSettings.json",
               "RelativeToolTip": "MVC\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -329,11 +358,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ServicioInventarioConcreto.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\ServicioInventarioConcreto.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\ServicioInventarioConcreto.cs",
               "RelativeDocumentMoniker": "MVC\\Services\\ServicioInventarioConcreto.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\ServicioInventarioConcreto.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\ServicioInventarioConcreto.cs",
               "RelativeToolTip": "MVC\\Services\\ServicioInventarioConcreto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -341,11 +370,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "InventarioService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\InventarioService.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\InventarioService.cs",
               "RelativeDocumentMoniker": "MVC\\Services\\InventarioService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\InventarioService.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\InventarioService.cs",
               "RelativeToolTip": "MVC\\Services\\InventarioService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -353,11 +382,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "MVC.csproj",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\MVC.csproj",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\MVC.csproj",
               "RelativeDocumentMoniker": "MVC\\MVC.csproj",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\MVC.csproj",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\MVC.csproj",
               "RelativeToolTip": "MVC\\MVC.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAswA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -365,11 +394,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "MVC\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAqwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -377,23 +406,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "M_CompraController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\M_CompraController.cs",
-              "RelativeDocumentMoniker": "MVC\\Controllers\\M_CompraController.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\M_CompraController.cs",
-              "RelativeToolTip": "MVC\\Controllers\\M_CompraController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAswEEAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T22:29:59.359Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Models\\ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "MVC\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Models\\ErrorViewModel.cs",
               "RelativeToolTip": "MVC\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -401,11 +418,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ArchivoService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\ArchivoService.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\ArchivoService.cs",
               "RelativeDocumentMoniker": "MVC\\Services\\ArchivoService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\ArchivoService.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Services\\ArchivoService.cs",
               "RelativeToolTip": "MVC\\Services\\ArchivoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -413,11 +430,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Home\\Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\Home\\Privacy.cshtml",
               "RelativeToolTip": "MVC\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -425,11 +442,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\appsettings.json",
               "RelativeDocumentMoniker": "MVC\\appsettings.json",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\appsettings.json",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\appsettings.json",
               "RelativeToolTip": "MVC\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -437,11 +454,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MVC\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "MVC\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -449,11 +466,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "MVC\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -461,11 +478,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "MVC\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Views\\_ViewStart.cshtml",
               "RelativeToolTip": "MVC\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -473,11 +490,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "IPersonaService.cs",
-              "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Interfaces\\IPersonaService.cs",
+              "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Interfaces\\IPersonaService.cs",
               "RelativeDocumentMoniker": "MVC\\Interfaces\\IPersonaService.cs",
-              "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Interfaces\\IPersonaService.cs",
+              "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\MVC\\MVC\\Interfaces\\IPersonaService.cs",
               "RelativeToolTip": "MVC\\Interfaces\\IPersonaService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -485,72 +502,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
-              "RelativeDocumentMoniker": "..\\BibliotecaFarmacia\\Clases\\Persona.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
               "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
-              "RelativeToolTip": "..\\BibliotecaFarmacia\\Clases\\Persona.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAawCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T02:11:44.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
+              "RelativeDocumentMoniker": "..\\BibliotecaFarmacia\\Clases\\Persona.cs",
               "ToolTip": "C:\\Users\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\camil\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Persona.cs",
+              "RelativeToolTip": "..\\BibliotecaFarmacia\\Clases\\Persona.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAlwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T07:32:27.159Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Medicamento.cs",
               "DocumentMoniker": "C:\\Users\\david\\AppData\\Local\\SourceServer\\f29a1640b36f6b8b7c6d2646a523d43c6cbd2edb9e25386cb0a3061152faaf8e\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\f29a1640b36f6b8b7c6d2646a523d43c6cbd2edb9e25386cb0a3061152faaf8e\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\david\\AppData\\Local\\SourceServer\\f29a1640b36f6b8b7c6d2646a523d43c6cbd2edb9e25386cb0a3061152faaf8e\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
               "ToolTip": "C:\\Users\\david\\AppData\\Local\\SourceServer\\f29a1640b36f6b8b7c6d2646a523d43c6cbd2edb9e25386cb0a3061152faaf8e\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\f29a1640b36f6b8b7c6d2646a523d43c6cbd2edb9e25386cb0a3061152faaf8e\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\david\\AppData\\Local\\SourceServer\\f29a1640b36f6b8b7c6d2646a523d43c6cbd2edb9e25386cb0a3061152faaf8e\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAawDAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T00:30:51.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "M_liquido.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
-              "RelativeDocumentMoniker": "..\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
               "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
-              "RelativeToolTip": "..\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_liquido.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAawCAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T00:34:14.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "M_capsula.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_capsula.cs",
-              "RelativeDocumentMoniker": "..\\BibliotecaFarmacia\\Clases\\M_capsula.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_capsula.cs",
               "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_capsula.cs",
-              "RelativeToolTip": "..\\BibliotecaFarmacia\\Clases\\M_capsula.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\M_capsula.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T00:32:45.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Medicamento.cs",
               "DocumentMoniker": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
-              "RelativeDocumentMoniker": "..\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
               "ToolTip": "C:\\Users\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
-              "RelativeToolTip": "..\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\david\\Desktop\\ProyectoFarmacia\\BibliotecaFarmacia\\Clases\\Medicamento.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAADIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T00:27:01.047Z"
